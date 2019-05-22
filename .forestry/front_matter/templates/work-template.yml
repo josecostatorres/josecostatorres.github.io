@@ -14,6 +14,7 @@ fields:
     date_format: YYYY
     time_format: 
     display_utc: false
+    export_format: YYYY
   default: now
 - type: text
   name: category
