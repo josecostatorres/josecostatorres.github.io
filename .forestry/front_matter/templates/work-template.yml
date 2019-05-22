@@ -1,0 +1,32 @@
+---
+label: Work Template
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: link
+  label: link
+- type: text
+  name: color1
+  label: color1
+- type: text
+  name: color2
+  label: color2
+- type: field_group_list
+  name: images
+  label: images
+  fields:
+  - type: text
+    name: image_path
+    label: image_path
+  - type: text
+    name: title
+    label: title
