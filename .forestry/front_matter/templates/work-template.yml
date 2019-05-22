@@ -41,5 +41,3 @@ fields:
   type: image_gallery
   config: {}
   label: Imagens
-pages:
-- _works/anjos70-1.md
