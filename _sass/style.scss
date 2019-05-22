@@ -25,12 +25,17 @@ header {
     width: 100%;
     padding: 20px 30px 30px;
 
+    background: black;
     color: white;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    
+    position: sticky;
+    top: 0;
+    z-index: 3;
 
     #header-title * {
         margin: 0;
@@ -74,6 +79,7 @@ main {
 
 .work {
     border: 2px solid black;
+    cursor: pointer;
 
     @media only screen and (min-width: 768px) {
         .work:hover:after {
