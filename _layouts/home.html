@@ -15,7 +15,7 @@ title: home
         </div>
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
             <ul>
-              {% for image in images.gallery %}
+              {% for image in work.gallery %}
                 <li><img src="{{ image | relative_url }}"></li>
               {% endfor %}
             </ul>
