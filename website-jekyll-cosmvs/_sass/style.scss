@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    background-color: #000;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 20px 30px 30px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    #header-title * {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    nav ul {
+        text-align: right;
+        font-size: 28px;
+        list-style: none;
+        margin: 0;
+    }
+}
+
+/* HEADER END */
+
+/* MAIN CONTENT */
+
+main {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 2;
+
+    article {
+        background-color: lightcoral;
+
+        h3 {
+            font-size: 50px;
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0 30px;
+            user-select: none;
+        }
+    }
+}
+
+.work {
+    border: 2px solid black;
+
+    @media only screen and (min-width: 768px) {
+        .work:hover:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            height: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .work:hover {
+            cursor: pointer;
+            background-color: floralwhite;
+            transform: translateY(-10px);
+            transition: all .06s;
+        }
+    }
+
+    .work-open {
+        cursor: pointer;
+        background-color: floralwhite;
+        transform: translateY(-10px);
+        transition: all .06s;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: row;
+        min-height: 300px;
+        max-height: 500px;
+
+        font-size: 18px;
+        display: none;
+    }
+
+    .work-left {
+        width: 35%;
+        padding: 15px 30px;
+    }
+
+    .work-right {
+        width: 65%;
+
+        ul {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            
+            li {
+                list-style: none;
+                height: 100%;
+                
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+/* MAIN CONTENT END */
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+
+    color: white;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    z-index: 0;
+
+    h4 {
+        font-weight: 100;
+        
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* FOOTER END */
+
+/* ABOUT */
+
+#sobre section {
+    padding: 30px;
+    padding-right: 50vw;
+
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    
+    p {
+        margin: 20px 0;
+    }
+}
+
+/* ABOUT END */
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: 70vh;
+        
+        #header-title h1 {
+            font-size: 40px;
+        }
+    }
+
+    /* HEADER END */
+    /* MAIN */
+    main article h3 {
+        padding: 0 20px;
+    }
+
+    .work:hover {
+        background-color: lightcoral;
+        transform: unset;
+    }
+
+    .work-container {
+        flex-direction: column;
+    }
+
+    .work-left {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .work-right {
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .work-right ul,
+    .work-right ul li,
+    .work-right ul img {
+        max-height: 300px;
+    }
+
+    /* MAIN END */
+    /* FOOTER */
+    footer {
+        position: relative;
+    }
+
+    /* FOOTER END */
+}
+
+/* MOBILE END */
