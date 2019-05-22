@@ -77,12 +77,20 @@ main {
     }
 }
 
+.work-open {
+        cursor: pointer;
+        background-color: floralwhite;
+        transform: translateY(-10px);
+    }
+
+
 .work {
     border: 2px solid black;
     cursor: pointer;
+    transition: all .06s;
 
     @media only screen and (min-width: 768px) {
-        .work:hover:after {
+        &:hover:after {
             content: '';
             position: absolute;
             left: 0;
@@ -92,19 +100,12 @@ main {
             box-sizing: border-box;
         }
 
-        .work:hover {
+        &:hover {
             cursor: pointer;
             background-color: floralwhite;
             transform: translateY(-10px);
             transition: all .06s;
         }
-    }
-
-    .work-open {
-        cursor: pointer;
-        background-color: floralwhite;
-        transform: translateY(-10px);
-        transition: all .06s;
     }
 
     .work-container {
