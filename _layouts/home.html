@@ -4,15 +4,16 @@ title: home
 ---
 
 {% for work in site.works %}
-<article class="work closed" style="background-color: {{ work.color1 }}">
+<article class="work closed" style="background-color: {{ work.cor_principal }}">
     <h3>{{ work.title }}</h3>
     <div class="work-container">
         <div class="work-left">
-            <h4>{{ work.type }}</h4>
+            <h4>{{ work.ano }}</h4>
+            <h4>{{ work.category }}</h4>
             <p>{{ work.description }}</p>
             <a>{{ work.link }}</a>
         </div>
-        <div class="work-right" style="background-color: {{ work.color2 }}">
+        <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
             <ul>
                 {% for image in page.images %}
                 <li><img src="{{ image.image_path }}" alt="{{ image.title}}" /></li>
