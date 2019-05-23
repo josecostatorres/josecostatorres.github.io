@@ -42,5 +42,6 @@ fields:
   config: {}
   label: Imagens
 pages:
+- _works/dínamo-notebooks.md
 - _works/caldas-design-week-1.md
 - _works/anjos70.md
