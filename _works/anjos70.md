@@ -1,5 +1,5 @@
 ---
-ano: 2013
+ano: 2014
 title: DÍNAMO
 category: Notebooks
 description: "A5 \"Dínamo\" Notebook \n80 Pages \nCover 280 grams, offset printing
