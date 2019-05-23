@@ -10,6 +10,7 @@ link: ''
 cor_principal: rgb(0, 0, 255)
 cor_secundaria: rgb(255, 255, 255)
 images:
+- "/uploads/2019-05/CLI.png"
 - "/uploads/2019-05/CLX.png"
 - "/uploads/2019-05/CLVIII.png"
 - "/uploads/2019-05/CLVII.png"
@@ -19,6 +20,5 @@ images:
 - "/uploads/2019-05/CLIV.png"
 - "/uploads/2019-05/CLIII.png"
 - "/uploads/2019-05/CLII.png"
-- "/uploads/2019-05/CLI.png"
 
 ---
