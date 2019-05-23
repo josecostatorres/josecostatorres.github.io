@@ -19,5 +19,6 @@ images:
 - "/uploads/2019-05/5-1.png"
 - "/uploads/2019-05/6-1.png"
 - "/uploads/2019-05/pop-up-optimizado.gif"
+- "/uploads/2019-05/7.png"
 
 ---
