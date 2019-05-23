@@ -6,7 +6,7 @@ description: |-
   Graphic design and concept for Conversas CLXI—CLXX.
 
   Conversas is a series of weekly informal meetings made so that we can get to know and discuss projects and interests.
-link: https://www.facebook.com/conversaslisboa/?eid=ARDzXDHN2bjOJXVCLLeCYR-BNkTkLh_INWI3dpMXUeO7FZ4gKgYqkCV2DqJNT4RgTgZ7pZ22S4kcrftp
+link: ''
 cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
 images:
