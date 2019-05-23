@@ -12,6 +12,9 @@ link: ''
 cor_principal: rgb(255, 236, 0)
 cor_secundaria: rgb(0, 0, 0)
 images:
+- "/uploads/2019-05/1-1.png"
+- "/uploads/2019-05/2-1.png"
+- "/uploads/2019-05/3-1.png"
 - "/uploads/2019-05/pop-up-optimizado.gif"
 
 ---
