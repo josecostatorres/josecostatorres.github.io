@@ -15,6 +15,5 @@ images:
 - "/uploads/2019-05/2.png"
 - "/uploads/2019-05/1.png"
 - "/uploads/2019-05/família.png"
-published: false
 
 ---
