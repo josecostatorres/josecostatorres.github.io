@@ -7,7 +7,7 @@ description: |-
 
   Conversas is a series of weekly informal meetings made so that we can get to know and discuss projects and interests.
 link: ''
-cor_principal: rgb(0, 0, 255)
+cor_principal: rgb(255, 255, 255)
 cor_secundaria: rgb(255, 255, 255)
 images:
 - "/uploads/2019-05/CLI.png"
