@@ -14,6 +14,5 @@ images:
 - "/uploads/2019-05/apresentação-digi-3.png"
 - "/uploads/2019-05/apresentação-digi-2.png"
 - "/uploads/2019-05/apresentação-digi-1.png"
-published: false
 
 ---
