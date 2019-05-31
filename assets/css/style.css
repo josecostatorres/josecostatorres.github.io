@@ -141,14 +141,18 @@ footer {
   header {
     flex-direction: column;
     padding: 30px 20px;
-    height: 70vh; }
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0; }
     header #header-title h1 {
       font-size: 40px; }
 
   /* HEADER END */
   /* MAIN */
   main article h3 {
-    padding: 0 20px; }
+    padding: 0 20px;
+    font-size: 30px; }
 
   .work:hover {
     background-color: lightcoral;
