@@ -6,7 +6,7 @@ description: |-
   Graphic design and concept with Mafalda P. Matos for Conversas CLI—CLX.
 
   Conversas is a series of weekly informal meetings made so that we can get to know and discuss projects and interests.
-link: ''
+link: https://www.facebook.com/
 cor_principal: rgb(255, 255, 255)
 cor_secundaria: rgb(255, 255, 255)
 images:
