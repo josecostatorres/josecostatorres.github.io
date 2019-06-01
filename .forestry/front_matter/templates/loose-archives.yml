@@ -1,6 +1,6 @@
 ---
 label: Loose Archives
-hide_body: false
+hide_body: true
 fields:
 - name: imagens
   type: image_gallery
