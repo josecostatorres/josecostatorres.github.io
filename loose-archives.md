@@ -14,13 +14,16 @@ images:
 - "/uploads/2019-05/apresentação-digi-3.png"
 - "/uploads/2019-05/apresentação-digi-2.png"
 - "/uploads/2019-05/apresentação-digi-6.png"
-
 ---
 
 <ul>
-  {% for images in site.loose-archives %}
+  {% for image in page.images %}
     <li>
-      <img src="{{ loose-archives.images }}">
+        <img src="{{ image | relative_url }}">
     </li>
   {% endfor %}
 </ul>
+
+<script>
+    
+</script>
