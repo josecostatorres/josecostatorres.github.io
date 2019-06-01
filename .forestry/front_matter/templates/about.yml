@@ -43,3 +43,5 @@ fields:
     maxSize: 250
   label: Image
   description: Add Image
+pages:
+- about.md
