@@ -2,8 +2,7 @@
 layout: default
 title: home
 ---
-<main id="home">
-
+    
 {% for work in site.works %}
 <article class="work closed" style="background-color: {{ work.cor_principal }}">
     <h3>{{ work.title }}</h3>
@@ -23,15 +22,13 @@ title: home
         </div>
     </div>
 </article>
-{% endfor %}
-</main>
-
+{% endfor %}      
+    
 
 <script>
     var $ = jQuery.noConflict();
     $(document).ready(function() {
         $('.work').stop().on('click', function() {
-
             if ($(this).hasClass('closed')) {
                 $(this).stop().on('mouseleave', function () {
                     $(this).unbind('mouseleave');
@@ -44,7 +41,6 @@ title: home
                     if ($(this).is(':visible'))
                         $(this).css('display', 'flex');
                 });
-                
                 // close every other list item
                 $('.work-container').not(workall).slideUp(time / 2).delay(30);
             }
