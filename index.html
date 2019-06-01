@@ -70,11 +70,10 @@
         </ul>
     </nav>
 </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <main id="home">
-
-
+<main id="home" class="page-content" aria-label="Content">
+        <div class="wrapper">
+        
+            
 <article class="work closed" style="background-color: rgb(255, 0, 0)">
     <h3>DÍNAMO NOTEBOOKS</h3>
     <div class="work-container">
@@ -258,15 +257,13 @@ As designers we have the role to combat discrimination, inequality and ensure th
         </div>
     </div>
 </article>
-
-</main>
-
+      
+    
 
 <script>
     var $ = jQuery.noConflict();
     $(document).ready(function() {
         $('.work').stop().on('click', function() {
-
             if ($(this).hasClass('closed')) {
                 $(this).stop().on('mouseleave', function () {
                     $(this).unbind('mouseleave');
@@ -279,7 +276,6 @@ As designers we have the role to combat discrimination, inequality and ensure th
                     if ($(this).is(':visible'))
                         $(this).css('display', 'flex');
                 });
-                
                 // close every other list item
                 $('.work-container').not(workall).slideUp(time / 2).delay(30);
             }
@@ -288,7 +284,8 @@ As designers we have the role to combat discrimination, inequality and ensure th
 </script>
 
 
-      </div>
+            
+        </div>
     </main><footer>
     <h4>Cosmvs © All rights reserved and stuff</h4>
     <h4>Website by <a href="brunobrunodesigndesign.com">brunobrunodesigndesign</a></h4>
