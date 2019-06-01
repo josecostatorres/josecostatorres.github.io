@@ -15,12 +15,6 @@ fields:
 - name: lectures
   type: field_group_list
   fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-    description: Add Lecture Title
   - name: year
     type: datetime
     label: Year
@@ -31,6 +25,17 @@ fields:
       time_format: 
       display_utc: false
       export_format: YYYY
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Add Lecture Title
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
   config:
     min: 
     max: 
