@@ -1,10 +1,7 @@
 ---
 layout: about
 title: About
-bio: "&lt;p&gt;Independent graphic and art direction bureau based in Lisboa-P.T. run
-  by José Torres.&lt;/p&gt;&lt;p&gt;Each work is custom made to fit its own purpose.
-  Focused on detailed typographic work for comercial and cultural spheres.&lt;/p&gt;&lt;p&gt;Would
-  love to hear from you.&lt;/p&gt;"
+bio: Independent graphic and art direction bureau based in Lisboa-P.T. run by José Torres. <br>Each work is custom made to fit its own purpose. <br>Focused on detailed typographic work for comercial and cultural spheres. <br>Would love to hear from you.
 lectures:
 - title: Conversas Lisboa
   year: 2017
@@ -13,6 +10,7 @@ lectures:
 image: "/uploads/2019-05/CLIII.png"
 
 ---
+
 <main id="about">
     <section id="leftside">
         <article id="bio">
@@ -21,16 +19,15 @@ image: "/uploads/2019-05/CLIII.png"
         </article>
         <article id="lectures">
             <h3>Lectures</h3>
-            <div>
-                <p><span class="year">2016</span>
-                    <a href="esad.pt" target="_blank">ESAD World Graphics Day</a>
-                </p>
-            </div>
-            <div>
-                <p><span class="year">2017</span>
-                    <a href="esad.pt" target="_blank">Conversas Lisboa</a>
-                </p>
-            </div>
+            <ul>
+                {% for lecture in page.lectures %}
+                <li>
+                    <p><span class="year">{{ lecture.year }}</span>
+                        <a href="esad.pt" target="_blank">{{ lecture.title }}</a>
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
         </article>
     </section>
     <section id="rightside">
