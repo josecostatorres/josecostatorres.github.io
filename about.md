@@ -14,7 +14,7 @@ image: "/uploads/2019-05/CLIII.png"
 <main id="about">
     <section id="leftside">
         <article id="bio">
-            <h3 class="hidden">About</h3>
+            <h1 class="hidden">About</h1>
             {{ page.bio }}
         </article>
         <article id="lectures">
@@ -34,7 +34,7 @@ image: "/uploads/2019-05/CLIII.png"
         <article>
         <h3 class="hidden">Contact</h3>
         <p>For job enquiries or just for a quick drink:</p>
-        <p><a href="mailto:josecostatorres@gmail.com">josecostatorres@gmail.com</a><br><a href="https://wa.me/351911070975" target="_blank">00351 911 070 975</a></p>
+        <p><a href="mailto:josecostatorres@gmail.com">josecostatorres@gmail.com</a><br><a href="https://wa.me/351911070975" target="_blank" rel="noreferrer">00351 911 070 975</a></p>
         </article>
         <article>
             <img src="{{ page.image | relative_url }}">
