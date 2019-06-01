@@ -7,3 +7,5 @@ fields:
   config: {}
   label: Imagens
   description: Adicionar todas as imagens da página nesta galeria.
+pages:
+- loose-archives.md
