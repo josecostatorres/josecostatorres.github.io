@@ -20,3 +20,11 @@ imagens:
 - "/uploads/2019-05/apresentação-digi-6.png"
 
 ---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
