@@ -1,0 +1,47 @@
+---
+label: About
+hide_body: true
+fields:
+- name: bio
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html
+  label: Bio
+  description: Adicionar Biografia
+- name: lectures
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Add Lecture Title
+  - name: year
+    type: datetime
+    label: Year
+    description: ''
+    config:
+      required: false
+      date_format: YYYY
+      time_format: 
+      display_utc: false
+      export_format: YYYY
+  config:
+    min: 
+    max: 
+    labelField: ''
+  label: Lectures
+  description: Adicionar lecture
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+  description: Add Image
+pages:
+- about.md

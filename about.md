@@ -1,8 +1,18 @@
 ---
 layout: about
 title: About
----
+bio: "&lt;p&gt;Independent graphic and art direction bureau based in Lisboa-P.T. run
+  by José Torres.&lt;/p&gt;&lt;p&gt;Each work is custom made to fit its own purpose.
+  Focused on detailed typographic work for comercial and cultural spheres.&lt;/p&gt;&lt;p&gt;Would
+  love to hear from you.&lt;/p&gt;"
+lectures:
+- title: Conversas Lisboa
+  year: 2017
+- title: ESAD World Graphics Day
+  year: 2016
+image: "/uploads/2019-05/CLIII.png"
 
+---
 <main id="about">
     <section id="leftside">
         <article id="bio">
