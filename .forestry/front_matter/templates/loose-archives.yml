@@ -2,10 +2,10 @@
 label: Loose Archives
 hide_body: true
 fields:
-- name: imagens
+- name: images
   type: image_gallery
   config: {}
-  label: Imagens
+  label: Images
   description: Adicionar todas as imagens da página nesta galeria.
 pages:
 - loose-archives.md
