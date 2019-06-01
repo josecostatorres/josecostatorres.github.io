@@ -1,4 +1,9 @@
 ---
 label: Loose Archives
 hide_body: false
-fields: []
+fields:
+- name: imagens
+  type: image_gallery
+  config: {}
+  label: Imagens
+  description: Adicionar todas as imagens da página nesta galeria.
