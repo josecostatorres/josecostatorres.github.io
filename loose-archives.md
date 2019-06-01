@@ -18,9 +18,9 @@ images:
 ---
 
 <ul>
-  {% for images in page.images %}
+  {% for images in site.loose-archives %}
     <li>
-      <img src="{{ page.image }}">
+      <img src="{{ loose-archives.images }}">
     </li>
   {% endfor %}
 </ul>
