@@ -1,11 +1,10 @@
 ---
-layout: about
-title: Cookies
+layout: loose-archives
+title: Loose Archives
 ---
 
-{% for work in site.works %}
-    <div class="work">
-        <h2>{{ work.title }}</h2>
-        <p>{{ work.description }}</p>
-    </div>
-{% endfor %}
+<ul>
+    {% for image in la.images %}
+        <li><img src="{{ image | relative_url }}"></li>
+    {% endfor %}
+</ul>

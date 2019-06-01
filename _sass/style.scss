@@ -20,6 +20,11 @@ a:hover {
     text-decoration: underline;
 }
 
+
+.hidden {
+    visibility: hidden;
+}
+
 /* HEADER */
 header {
     width: 100%;
@@ -32,7 +37,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    
+
     position: sticky;
     top: 0;
     z-index: 3;
@@ -54,7 +59,7 @@ header {
 
 /* MAIN CONTENT */
 
-main {
+#home {
     width: 100%;
     margin-bottom: 100px;
     display: flex;
@@ -67,7 +72,7 @@ main {
         background-color: lightcoral;
 
         h3 {
-            font-size: 50px;
+            font-size: 45px;
             display: block;
             width: 100%;
             margin: 0;
@@ -78,14 +83,15 @@ main {
 }
 
 .work-open {
-        cursor: pointer;
-        background-color: floralwhite;
-        transform: translateY(-10px);
-    }
+    cursor: pointer;
+    background-color: floralwhite;
+    transform: translateY(-10px);
+}
 
 
 .work {
     border: 2px solid black;
+    border-bottom: 0;
     cursor: pointer;
     transition: all .06s;
 
@@ -94,10 +100,11 @@ main {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -15px;
+            bottom: -10px;
             height: 15px;
             width: 100%;
             box-sizing: border-box;
+            background-color: inherit;
         }
 
         &:hover {
@@ -134,11 +141,11 @@ main {
             display: flex;
             flex-direction: row;
             overflow: scroll;
-            
+
             li {
                 list-style: none;
                 height: 100%;
-                
+
                 img {
                     height: 100%;
                     object-fit: contain;
@@ -155,23 +162,18 @@ main {
 footer {
     width: 100%;
     height: 80px;
-    margin: 0 auto;
+    margin: 100px auto 0;
 
     color: white;
     text-align: center;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: static;
+
 
     z-index: 0;
 
     h4 {
         font-weight: 100;
-        
-        a {
-            text-decoration: underline;
-        }
     }
 }
 
@@ -179,16 +181,62 @@ footer {
 
 /* ABOUT */
 
-#sobre section {
-    padding: 30px;
-    padding-right: 50vw;
-
+#about {
+    text-transform: uppercase;
     color: white;
-    font-size: 25px;
-    font-weight: 100;
-    
-    p {
-        margin: 20px 0;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: row;
+
+    #leftside {
+        width: 50%;
+        max-width: 650px;
+        margin-right: 100px;
+        padding: 0 30px 30px 30px;
+
+        #bio {
+            p {
+                margin: 20px 0;
+                color: white !important;
+            }
+        }
+
+        #lectures {
+            margin-top: 100px;
+
+            h3 {
+                font-size: 22px;
+                margin: 20px 0;
+            }
+
+            .year {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #rightside {
+        width: 50%;
+        padding: 0 30px 30px 30px;
+
+        a {
+            text-decoration: underline;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        a:hover {
+            font-style: italic;
+        }
+        
+        img {
+            width: 70%;
+            margin-top:50px;
+        }
     }
 }
 
@@ -204,10 +252,10 @@ footer {
         flex-direction: column;
         padding: 30px 20px;
         height: 70vh;
-        position: absolute;
+        position: static;
         top: 0;
         left: 0;
-        
+
         #header-title h1 {
             font-size: 40px;
         }
