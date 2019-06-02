@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en"><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -56,6 +55,8 @@
 
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+
 </head>
 <body><header>
     <a id="header-title" href="/">
@@ -65,15 +66,19 @@
     </a>
     <nav>
         <ul>
-            <li><a href="about">INFO</a></li>
-            <li><a href="loose-archives">LOOSE ARCHIVES</a></li>
+            <li id="nav-info"><a href="about">INFO</a></li>
+            <li id="nav-la"><a href="loose-archives">LOOSE ARCHIVES</a></li>
         </ul>
     </nav>
 </header>
 <main id="about" class="page-content" aria-label="Content">
-        <div class="wrapper">
-        
-            <section id="leftside">
+    <div class="wrapper">
+        <style>
+    #nav-info {
+        text-decoration: underline !important;
+    }
+</style>
+<section id="leftside">
     <article id="bio">
         <h1 class="hidden">About</h1>
         Independent graphic and art direction bureau based in Lisboa-P.T. run by José Torres. <br />Each work is custom made to fit its own purpose. <br />Focused on detailed typographic work for comercial and cultural spheres. <br />Would love to hear from you.
@@ -109,12 +114,12 @@
 </section>
 
 
-            
-        </div>
-    </main><footer>
+</div>
+</main><footer>
     <h4>Cosmvs © All rights reserved and stuff</h4>
     <h4>Website by <a href="brunobrunodesigndesign.com">brunobrunodesigndesign</a></h4>
 </footer>
+
 </body>
 
 </html>

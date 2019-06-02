@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en"><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -56,6 +55,8 @@
 
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+
 </head>
 <body><header>
     <a id="header-title" href="/">
@@ -65,78 +66,98 @@
     </a>
     <nav>
         <ul>
-            <li><a href="about">INFO</a></li>
-            <li><a href="loose-archives">LOOSE ARCHIVES</a></li>
+            <li id="nav-info"><a href="about">INFO</a></li>
+            <li id="nav-la"><a href="loose-archives">LOOSE ARCHIVES</a></li>
         </ul>
     </nav>
 </header>
 <main id="loose-archives" class="page-content" aria-label="Content">
-        <div class="wrapper">
+    <div class="wrapper">
+        <style>
+    #nav-la {
+        text-decoration: underline !important;
+    }
+</style>
+<section>
+    <ul>
         
-            <ul>
-  
-    <li>
-        <img src="/uploads/2019-05/CLIX.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/CLX.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/CLI.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/CLV.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/CLIII.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-1.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/fam%C3%ADlia.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-5.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-4.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-3.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-2.png" />
-    </li>
-  
-    <li>
-        <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-6.png" />
-    </li>
-  
-</ul>
+        <li>
+            <img src="/uploads/2019-05/CLIX.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/CLX.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/CLI.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/CLV.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/CLIII.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-1.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/fam%C3%ADlia.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-5.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-4.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-3.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-2.png" />
+        </li>
+        
+        <li>
+            <img src="/uploads/2019-05/apresenta%C3%A7%C3%A3o-digi-6.png" />
+        </li>
+        
+    </ul>
+</section>
 
 <script>
-    
+    function imageSize() {
+        var images = document.getElementsByTagName("img");
+        for (i = 0; i < images.length; i++) {
+            var randomWidth = Math.floor(Math.random() * 400) + 300;
+            images[i].style.width = randomWidth + 'px';
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
+            images[i].style.left = randomLeft + 'px';
+            var randomTop = Math.floor(Math.random() * 3000) + 000;
+            console.log(i, randomWidth, randomLeft);
+            images[i].style.top = randomTop + 'px';
+        }
+    }
+    imageSize();
+
+    var $draggable = $('img').draggabilly({
+        containment: 'body'
+    })
+
 </script>
 
 
 
-            
-        </div>
-    </main><footer>
-    <h4>Cosmvs © All rights reserved and stuff</h4>
-    <h4>Website by <a href="brunobrunodesigndesign.com">brunobrunodesigndesign</a></h4>
-</footer>
+</div>
+</main>
+      
 </body>
 
 </html>
