@@ -28,7 +28,8 @@ a:hover {
 /* HEADER */
 header {
     width: 100%;
-    padding: 20px 30px 30px;
+    padding: 20px 30px 15px;
+    margin-bottom: 15px;
 
     background: black;
     color: white;
@@ -44,7 +45,7 @@ header {
 
     #header-title * {
         margin: 0;
-        font-size: 28px;
+        font-size: 35px;
     }
 
     nav ul {
@@ -58,6 +59,10 @@ header {
 /* HEADER END */
 
 /* MAIN CONTENT */
+
+main {
+    width: 100vw;
+}
 
 #home {
     width: 100%;
@@ -85,36 +90,48 @@ header {
 .work-open {
     cursor: pointer;
     background-color: floralwhite;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    transition: all .06s;
+    padding-bottom: 10px;
+    margin-bottom: -5px;
+    
+    filter: brightness(1.5);
 }
 
 
 .work {
     border: 2px solid black;
     border-bottom: 0;
-    cursor: pointer;
     transition: all .06s;
 
     @media only screen and (min-width: 768px) {
-        &:hover:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            height: 15px;
-            width: 100%;
-            box-sizing: border-box;
-            background-color: inherit;
-        }
+//        &:hover:after {
+//            content: '';
+//            position: absolute;
+//            left: 0;
+//            bottom: -10px;
+//            height: 15px;
+//            width: 100%;
+//            box-sizing: border-box;
+//            background-color: inherit;
+//        }
 
         &:hover {
             cursor: pointer;
             background-color: floralwhite;
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             transition: all .06s;
+            padding-bottom: 10px;
+            margin-bottom: -5px;
+            
+            filter: brightness(1.5);
         }
     }
 
+    h3 {
+        cursor: pointer;
+    }
+    
     .work-container {
         display: flex;
         flex-direction: row;
@@ -123,6 +140,9 @@ header {
 
         font-size: 18px;
         display: none;
+        cursor: default;
+        
+        margin-top: 10px;
     }
 
     .work-left {
@@ -141,6 +161,7 @@ header {
             display: flex;
             flex-direction: row;
             overflow: scroll;
+            overflow-y:hidden;
 
             li {
                 list-style: none;
@@ -216,6 +237,10 @@ footer {
                 font-size: 25px;
                 font-weight: 700;
             }
+            
+            li {
+                list-style: urdu;
+            }
         }
     }
 
@@ -245,6 +270,21 @@ footer {
 
 /* LOOSE ARCHIVES */
 
+#loose-archives section {
+    width: 100vw;
+    height: 3000px;
+    z-index: 4;
+    position: relative;
+    
+    ul {
+        list-style: none;
+    }
+    
+    img {
+        position: absolute;
+    }
+    
+}
 
 
 /* LOOSE ARCHIVES END */

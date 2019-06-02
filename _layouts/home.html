@@ -2,7 +2,7 @@
 layout: default
 title: home
 ---
-    
+
 {% for work in site.works %}
 <article class="work closed" style="background-color: {{ work.cor_principal }}">
     <h3>{{ work.title }}</h3>
@@ -15,36 +15,53 @@ title: home
         </div>
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
             <ul>
-              {% for image in work.images %}
+                {% for image in work.images %}
                 <li><img src="{{ image | relative_url }}"></li>
-              {% endfor %}
+                {% endfor %}
             </ul>
         </div>
     </div>
 </article>
-{% endfor %}      
-    
+{% endfor %}
+
 
 <script>
     var $ = jQuery.noConflict();
     $(document).ready(function() {
-        $('.work').stop().on('click', function() {
-            if ($(this).hasClass('closed')) {
-                $(this).stop().on('mouseleave', function () {
+        $('.work h3').on('click', function() {
+            if ($(this).parent().hasClass('closed')) {
+                $(this).on('mouseleave', function() {
                     $(this).unbind('mouseleave');
                 });
-                $(this).toggleClass("work-open");
+                $(this).parent().addClass("work-open");
                 // show image and info
-                var workall = $(this).find('.work-container');
+                var workall = $(this).parent().find('.work-container');
                 var time = 60;
                 workall.slideToggle(time, function() {
                     if ($(this).is(':visible'))
                         $(this).css('display', 'flex');
                 });
                 // close every other list item
-                $('.work-container').not(workall).slideUp(time / 2).delay(30);
+                $('.work-container').not(workall).hide(time / 2).delay(30).removeClass("work-open");
+            } else if ($(this).parent().hasClass('work-open')) {
+//                $('.work').removeClass("work-open");
             }
         });
-    });
-</script>
+        
 
+        $('.work-right').each(function() {
+            $(this).mousedown(function() {
+                $(this).find('ul').animate({
+                    scrollRight: '+=500'
+                }, 100);
+                setTimeout(function() {
+                    $(this).animate({
+                        scrollLeft: '0'
+                    }, 100)
+                }, 8000);
+            });
+        })
+
+    });
+
+</script>

@@ -16,14 +16,33 @@ images:
 - "/uploads/2019-05/apresentação-digi-6.png"
 ---
 
-<ul>
-  {% for image in page.images %}
-    <li>
-        <img src="{{ image | relative_url }}">
-    </li>
-  {% endfor %}
-</ul>
+<section>
+    <ul>
+        {% for image in page.images %}
+        <li>
+            <img src="{{ image | relative_url }}">
+        </li>
+        {% endfor %}
+    </ul>
+</section>
 
 <script>
-    
+    function imageSize() {
+        var images = document.getElementsByTagName("img");
+        for (i = 0; i < images.length; i++) {
+            var randomWidth = Math.floor(Math.random() * 400) + 300;
+            images[i].style.width = randomWidth + 'px';
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
+            images[i].style.left = randomLeft + 'px';
+            var randomTop = Math.floor(Math.random() * 3000) + 000;
+            console.log(i, randomWidth, randomLeft);
+            images[i].style.top = randomTop + 'px';
+        }
+    }
+    imageSize();
+
+    var $draggable = $('img').draggabilly({
+        containment: 'body'
+    })
+
 </script>
