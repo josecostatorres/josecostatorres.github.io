@@ -22,6 +22,14 @@ exclude:
   - README.md
   - .gitignore
 
+mini_magick:
+    medium:
+        source: uploads/large/
+        destination: uploads/minified/
+        resize: "100x70^"
+        gravity: "center"
+        extent: "100x70"
+        
 # Date format for posts
 # refer to http://shopify.github.io/liquid/filters/date/ if you
 # want to customize this

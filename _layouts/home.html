@@ -14,7 +14,7 @@ title: home
             <a href="{{ work.link }}">{{ work.linkname }}</a>
         </div>
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
-            <ul>
+            <ul class="scroller">
                 {% for image in work.images %}
                 <li><img class="lazy" data-src="{{ image | relative_url }}"></li>
                 {% endfor %}
@@ -31,7 +31,7 @@ title: home
         
         $(function() {
             $('.lazy').Lazy({
-                appendScroll: $(this).parent().parent(),
+                appendScroll: $(this).parent(".scroller"),
                 effect: "fadeIn",
                 effectTime: 500
             });

@@ -20,7 +20,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="{{ image | relative_url }}">
+            <img src="//images.weserv.nl?url={{ site.baseurl | replace:'http://','' }}{{ image }}&w=600">
         </li>
         {% endfor %}
         <script>

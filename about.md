@@ -43,7 +43,7 @@ image: "/uploads/2019-05/CLIII.png"
     $(function() {
         $('.lazy').Lazy({
             effect: "fadeIn",
-            effectTime: 500
+            effectTime: 1000
         });
     });
 </script>
