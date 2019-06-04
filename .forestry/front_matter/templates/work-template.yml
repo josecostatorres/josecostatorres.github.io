@@ -19,12 +19,37 @@ fields:
 - type: text
   name: category
   label: Category
+- name: link-group
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: link_text
+    type: select
+    default: ''
+    config:
+      required: false
+      options:
+      - Website
+      - Link
+      - More
+      source:
+        type: simple
+        section: ''
+        file: 
+        path: ''
+    label: Link Text
+  config:
+    min: 
+    max: 
+    labelField: ''
+  label: Link-group
 - type: textarea
   name: description
   label: Description
-- type: text
-  name: link
-  label: Link
 - name: cor_principal
   type: color
   label: Cor Principal
