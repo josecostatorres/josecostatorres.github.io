@@ -25,6 +25,15 @@ header {
   padding: 20px 30px 15px;
   margin-bottom: 15px;
   background: transparent;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+24,000000+100&1+52,0+100 */
+  background: -moz-linear-gradient(top, black 24%, black 52%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, black 24%, black 52%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 24%, black 52%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
   color: white;
   display: flex;
   flex-direction: row;
