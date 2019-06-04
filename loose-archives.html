@@ -82,18 +82,18 @@
     <ul>
         
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o9owczy8wR1t90cl6o1_500.png&amp;q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o9owczy8wR1t90cl6o1_500.png&amp;q=30&amp;output=jpg" />
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o9owczy8wR1t90cl6o1_500.png&amp;h=600&amp;q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o9owczy8wR1t90cl6o1_500.png&amp;q=25&amp;output=jpg" />
         </li>
         
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o7lrmrpWkG1t90cl6o1_500.png&amp;q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o7lrmrpWkG1t90cl6o1_500.png&amp;q=30&amp;output=jpg" />
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o7lrmrpWkG1t90cl6o1_500.png&amp;h=600&amp;q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io/uploads/large/2019-tumblr_o7lrmrpWkG1t90cl6o1_500.png&amp;q=25&amp;output=jpg" />
         </li>
         
         <script>
             $(function() {
                 $('.lazy').Lazy({
                     effect: "fadeIn",
-                    effectTime: 500,
+                    effectTime: 50,
                     threshold: 200,
                     scrollDirection: "vertical"
                 });
@@ -106,11 +106,14 @@
     function imageSize() {
         var images = document.getElementsByTagName("img");
         for (i = 0; i < images.length; i++) {
-            var randomHeight = Math.floor(Math.random() * 300) + 200;
-            images[i].style.height = randomHeight + 'px';
-            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomHeight)) + 0;
+            var min = 400;
+            var max = 500;
+            var randomWidth = Math.floor(Math.random() * (max - min + 1) + min);
+            images[i].style.width = randomWidth + 'px';
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
             var randomTop = Math.floor(Math.random() * 2500) + 000;
+            console.log(window.innerWidth, randomWidth);
             images[i].style.top = randomTop + 'px';
         }
     }
