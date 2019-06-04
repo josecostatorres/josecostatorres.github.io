@@ -16,7 +16,7 @@ title: home
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
             <ul class="scroller">
                 {% for image in work.images %}
-                <li><img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=80"></li>
+                <li><img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=20&output=jpg"></li>
                 {% endfor %}
             </ul>
         </div>
@@ -28,15 +28,13 @@ title: home
 <script>
     var $ = jQuery.noConflict();
     $(document).ready(function() {
-        
-        $(function() {
-            $('.lazy').Lazy({
-                appendScroll: $(this).parent(".scroller"),
-                effect: "fadeIn",
-                effectTime: 500
-            });
+
+        $('.scroller li:first-of-type .lazy').Lazy({
+            afterLoad: function(element) {
+                console.log('image "' + element.data('src') + '" was loaded successfully');
+            }
         });
-        
+
         $('.work h3').on('click', function() {
             if ($(this).parent().hasClass('closed')) {
                 $(this).on('mouseleave', function() {
@@ -52,11 +50,23 @@ title: home
                 });
                 // close every other list item
                 $('.work-container').not(workall).hide(time / 2).delay(30).removeClass("work-open");
+
+                $(this).parent().find('img.lazy').Lazy({
+                    effect: "fadeIn",
+                    effectTime: 500,
+                    threshold: 200,
+                    scrollDirection: "horizontal",
+                    visibleOnly: true,
+                    afterLoad: function(element) {
+                        console.log('image "' + element.data('src') + '" was loaded successfully');
+                    }
+                });
+
             } else if ($(this).parent().hasClass('work-open')) {
-//                $('.work').removeClass("work-open");
+                //                $('.work').removeClass("work-open");
             }
         });
-        
+
 
         $('.work-right').each(function() {
             $(this).mousedown(function() {
