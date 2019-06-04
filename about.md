@@ -35,6 +35,15 @@ image: "/uploads/2019-05/CLIII.png"
     <p><a href="mailto:josecostatorres@gmail.com">josecostatorres@gmail.com</a><br><a href="https://wa.me/351911070975" target="_blank" rel="noreferrer">00351 911 070 975</a></p>
     </article>
     <article>
-        <img src="{{ page.image | relative_url }}">
+        <img class="lazy" data-src="{{ page.image | relative_url }}">
     </article>
 </section>
+
+<script>
+    $(function() {
+        $('.lazy').Lazy({
+            effect: "fadeIn",
+            effectTime: 500
+        });
+    });
+</script>
