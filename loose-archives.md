@@ -23,6 +23,14 @@ images:
             <img class="lazy" src="{{ image | relative_url }}">
         </li>
         {% endfor %}
+        <script>
+            $(function() {
+                $('.lazy').Lazy({
+                    effect: "fadeIn",
+                    effectTime: 1000
+                });
+            });
+        </script>
     </ul>
 </section>
 
@@ -35,7 +43,6 @@ images:
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomHeight)) + 0;
             images[i].style.left = randomLeft + 'px';
             var randomTop = Math.floor(Math.random() * 3000) + 000;
-            console.log(i, randomHeight, randomLeft);
             images[i].style.top = randomTop + 'px';
         }
     }
@@ -43,10 +50,5 @@ images:
     var $draggable = $('img').draggabilly({
         containment: 'body'
     })
-    $(function() {
-        $('.lazy').Lazy({
-            effect: "fadeIn",
-            effectTime: 1000
-        });
-    });
+    
 </script>
