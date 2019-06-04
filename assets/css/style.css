@@ -158,6 +158,8 @@ footer {
   z-index: 0; }
   footer h4 {
     font-weight: 300; }
+    footer h4 p {
+      display: inline-block; }
 
 /* FOOTER END */
 /* MOBILE */
@@ -199,6 +201,8 @@ footer {
   footer {
     position: relative;
     padding: 0 10vw; }
+    footer h4 p {
+      display: block; }
     footer a {
       text-decoration: underline;
       font-size: 20px;
@@ -265,7 +269,7 @@ footer {
 /* LOOSE ARCHIVES */
 #loose-archives section {
   width: 100vw;
-  height: 3000px;
+  height: 2500px;
   position: relative;
   overflow: hidden; }
   #loose-archives section ul {

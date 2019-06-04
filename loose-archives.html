@@ -170,7 +170,7 @@
 </section>
 
 <script>
-    function imageSize() {
+    function imageSizeDesktop() {
         var images = document.getElementsByTagName("img");
         for (i = 0; i < images.length; i++) {
             var min = 300;
@@ -179,12 +179,30 @@
             images[i].style.width = randomWidth + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
-            var randomTop = Math.floor(Math.random() * 2500) + 000;
+            var randomTop = Math.floor(Math.random() * (2500 - 1 + 1) + 1);
             console.log(window.innerWidth, randomWidth);
             images[i].style.top = randomTop + 'px';
         }
     }
-    imageSize();
+    function imageSizeMobile() {
+        var images = document.getElementsByTagName("img");
+        for (i = 0; i < images.length; i++) {
+            var min = 100;
+            var max = 200;
+            var randomWidth = Math.floor(Math.random() * (max - min + 1) + min);
+            images[i].style.width = randomWidth + 'px';
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
+            images[i].style.left = randomLeft + 'px';
+            var randomTop = Math.floor(Math.random() * (2500 - 1 + 1) + 1);
+            console.log(window.innerWidth, randomWidth);
+            images[i].style.top = randomTop + 'px';
+        }
+    }
+    if (window.matchMedia('(max-width:500px)').matches) {
+        imageSizeMobile();
+    } else {
+        imageSizeDesktop();
+    }
     var $draggable = $('img').draggabilly({
         containment: 'body'
     })
