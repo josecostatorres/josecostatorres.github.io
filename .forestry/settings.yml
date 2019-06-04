@@ -13,10 +13,10 @@ sections:
   create: all
   match: "**/*"
 upload_dir: uploads
-public_path: "/uploads"
+public_path: "/uploads/large"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":year/:filename:"
+file_template: ":year:-:filename:"
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
   publish_command: bundle exec jekyll build -d _site
