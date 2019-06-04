@@ -11,7 +11,7 @@ lectures:
   link: https://www.facebook.com/conversaslisboa/photos/gm.130234881084610/1358338434295870/?type=3&theater
 - title: ESAD World Graphics Day
   year: 2016
-  link: ''
+  link: https://www.esad.pt/pt/news/esad-world-graphics-day-2016
 image: "/uploads/2019-05/CLIII.png"
 
 ---
