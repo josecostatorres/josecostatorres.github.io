@@ -16,7 +16,7 @@ title: home
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
             <ul>
                 {% for image in work.images %}
-                <li><img src="{{ image | relative_url }}"></li>
+                <li><img class="lazy" src="{{ image | relative_url }}"></li>
                 {% endfor %}
             </ul>
         </div>

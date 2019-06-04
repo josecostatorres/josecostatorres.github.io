@@ -31,7 +31,7 @@ header {
     padding: 20px 30px 15px;
     margin-bottom: 15px;
 
-    background: black;
+    background: transparent;
     color: white;
 
     display: flex;
@@ -45,7 +45,7 @@ header {
 
     #header-title * {
         margin: 0;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     nav ul {
@@ -273,9 +273,8 @@ footer {
 #loose-archives section {
     width: 100vw;
     height: 3000px;
-    z-index: 4;
     position: relative;
-    
+    overflow: hidden;
     ul {
         list-style: none;
     }
