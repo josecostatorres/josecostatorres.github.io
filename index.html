@@ -10,11 +10,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="canonical" href="https://cosmvs.com">
-
     <meta name="theme-color" content="#000000">
     <!--<link href="files/web.png" rel="shortcut icon" type="image/x-icon">-->
 
-    <meta name="description" content="This is a portfolio website for José "Cosmvs" Torres">
+    <meta name="description" content="This is a portfolio website for José Cosmvs Torres">
     <meta name="keywords" content="">
     <meta name="author" content="BrunoSantos@brunobrunodesigndesign">
 
@@ -288,28 +287,30 @@ As designers we have the role to combat discrimination, inequality and ensure th
 
                 $(this).parent().find('img.lazy').Lazy({
                     effect: "fadeIn",
-                    effectTime: 500,
-                    threshold: 200,
-                    scrollDirection: "horizontal"
+                    effectTime: 60,
+                    threshold: 100,
+                    scrollDirection: 'horizontal',
+                    appendScroll: $('.work-right'),
+                    afterLoad: function(element) {
+                        console.log('image "' + element.data('src') + '" was loaded successfully');
+                    }
                 });
 
-            } else if ($(this).parent().hasClass('work-open')) {
-                //                $('.work').removeClass("work-open");
+            } else if (!$(this).parent().hasClass('work-open')) {
+                $(this).parent().removeClass("work-open");
             }
         });
 
 
-        $('.work-right').each(function() {
-            $(this).mousedown(function() {
-                $(this).find('ul').animate({
-                    scrollRight: '+=500'
-                }, 100);
-                setTimeout(function() {
-                    $(this).animate({
-                        scrollLeft: '0'
-                    }, 100)
-                }, 8000);
-            });
+        $('.work-right').click(function() {
+            $(this).find('ul').animate({
+                scrollRight: '+=500'
+            }, 100);
+            setTimeout(function() {
+                $(this).animate({
+                    scrollLeft: '0'
+                }, 100)
+            }, 8000);
         })
 
     });
