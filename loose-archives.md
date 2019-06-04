@@ -20,7 +20,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="//images.weserv.nl?url={{ https://josecostatorres.github.io | replace:'http://','' }}{{ image }}&w=600">
+            <img class="lazy" data-src="https://images.weserv.nl?url={{ https://josecostatorres.github.io | replace:'http://','' }}{{ image }}&w=600">
         </li>
         {% endfor %}
         <script>
