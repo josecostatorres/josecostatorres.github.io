@@ -43,12 +43,10 @@ images:
     var $draggable = $('img').draggabilly({
         containment: 'body'
     })
-    var $ = jQuery.noConflict();
-    window.onload = function() {
+    $(function() {
         $('.lazy').Lazy({
             effect: "fadeIn",
             effectTime: 1000
         });
-        console.log('teste');
-    };
+    });
 </script>
