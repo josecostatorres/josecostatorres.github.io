@@ -263,6 +263,15 @@ As designers we have the role to combat discrimination, inequality and ensure th
 <script>
     var $ = jQuery.noConflict();
     $(document).ready(function() {
+        
+        $(function() {
+            $('.lazy').Lazy({
+                effect: "fadeIn",
+                effectTime: 1000
+            });
+        });
+        
+        
         $('.work h3').on('click', function() {
             if ($(this).parent().hasClass('closed')) {
                 $(this).on('mouseleave', function() {
