@@ -40,6 +40,9 @@ images:
         }
     }
     imageSize();
+    var $draggable = $('img').draggabilly({
+        containment: 'body'
+    })
     var $ = jQuery.noConflict();
     $(document).ready(function() {
         $(function() {
