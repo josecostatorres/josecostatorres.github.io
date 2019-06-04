@@ -8,7 +8,7 @@ bio: Independent graphic and art direction bureau based in Lisboa-P.T. run by Jo
 lectures:
 - title: Conversas Lisboa
   year: 2017
-  link: ''
+  link: https://www.facebook.com/conversaslisboa/photos/gm.130234881084610/1358338434295870/?type=3&theater
 - title: ESAD World Graphics Day
   year: 2016
   link: ''
