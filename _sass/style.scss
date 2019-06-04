@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -23,6 +43,7 @@ a:hover {
 
 .hidden {
     visibility: hidden;
+    margin: 0;
 }
 
 /* HEADER */
@@ -33,10 +54,14 @@ header {
 
     background: transparent;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+24,000000+100&1+52,0+100 */
-background: -moz-linear-gradient(top,  rgba(0,0,0,1) 24%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 24%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(0,0,0,1) 24%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 24%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 24%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 24%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
 
     color: white;
 
@@ -98,10 +123,8 @@ main {
     background-color: floralwhite;
     transform: translateY(-5px);
     transition: all .06s;
-    padding-bottom: 10px;
+    padding-bottom: 0 !important;
     margin-bottom: -5px;
-    
-    filter: brightness(1.5);
 }
 
 
@@ -111,16 +134,16 @@ main {
     transition: all .06s;
 
     @media only screen and (min-width: 768px) {
-//        &:hover:after {
-//            content: '';
-//            position: absolute;
-//            left: 0;
-//            bottom: -10px;
-//            height: 15px;
-//            width: 100%;
-//            box-sizing: border-box;
-//            background-color: inherit;
-//        }
+        //        &:hover:after {
+        //            content: '';
+        //            position: absolute;
+        //            left: 0;
+        //            bottom: -10px;
+        //            height: 15px;
+        //            width: 100%;
+        //            box-sizing: border-box;
+        //            background-color: inherit;
+        //        }
 
         &:hover {
             cursor: pointer;
@@ -129,8 +152,6 @@ main {
             transition: all .06s;
             padding-bottom: 10px;
             margin-bottom: -5px;
-            
-            filter: brightness(1.5);
         }
     }
 
@@ -138,6 +159,7 @@ main {
         cursor: pointer;
     }
     
+
     .work-container {
         display: flex;
         flex-direction: row;
@@ -147,27 +169,33 @@ main {
         font-size: 18px;
         display: none;
         cursor: default;
-        
+
         margin-top: 10px;
     }
 
     .work-left {
         width: 35%;
         padding: 15px 30px;
+        
+        h4 {
+            margin: 5px 0;
+        }
     }
 
     .work-right {
         width: 65%;
+        overflow: scroll;
+        overflow-y: hidden;
+        scrollbar-color: black;
 
         ul {
             height: 100%;
+            width: fit-content;
             margin: 0;
             padding: 0;
 
             display: flex;
             flex-direction: row;
-            overflow: scroll;
-            overflow-y:hidden;
 
             li {
                 list-style: none;
@@ -176,6 +204,10 @@ main {
                 img {
                     height: 100%;
                     object-fit: contain;
+
+                    &:hover {
+                        filter: none;
+                    }
                 }
             }
         }
@@ -195,16 +227,89 @@ footer {
     text-align: center;
 
     position: static;
-
-
     z-index: 0;
 
     h4 {
-        font-weight: 100;
+        font-weight: 300;
     }
 }
 
 /* FOOTER END */
+
+/* MOBILE */
+
+@media only screen and (max-width: 500px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: 70vh;
+        position: static;
+        top: 0;
+        left: 0;
+
+        #header-title h1 {
+            font-size: 40px;
+        }
+    }
+
+    /* HEADER END */
+    /* MAIN */
+    #home article h3 {
+        padding: 5px 16px;
+        font-size: 32px;
+    }
+
+    .work {
+
+        &:hover {
+            background-color: lightcoral;
+            transform: unset;
+        }
+
+        .work-container {
+            flex-direction: column;
+            max-height: unset;
+        }
+
+        .work-left {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .work-right {
+            width: 100%;
+            height: 50%;
+            
+            .scroller, li, img {
+                max-height: 300px;
+            }
+        }
+
+    }
+
+
+    /* MAIN END */
+    /* FOOTER */
+    footer {
+        position: relative;
+        padding: 0 10vw;
+        h4 {
+            
+        }
+        a {
+            text-decoration: underline;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    /* FOOTER END */
+}
+
+/* MOBILE END */
+
 
 /* ABOUT */
 
@@ -243,7 +348,7 @@ footer {
                 font-size: 25px;
                 font-weight: 700;
             }
-            
+
             li {
                 list-style: urdu;
             }
@@ -254,23 +359,52 @@ footer {
         width: 50%;
         padding: 0 30px 30px 30px;
 
+        p:first-of-type {
+            margin: 0;
+        }
+
         a {
             text-decoration: underline;
             margin-top: 10px;
             display: inline-block;
+
+            &:hover {
+                font-style: italic;
+            }
         }
 
-        a:hover {
-            font-style: italic;
-        }
-        
         img {
             width: 70%;
-            margin-top:50px;
+            margin-top: 50px;
         }
     }
 }
 
+@media only screen and (max-width: 500px) {
+
+    #about .wrapper {
+        flex-direction: column;
+        
+        #leftside {
+            width: 100%;
+            max-width: unset;
+            padding: 16px;
+            margin: 0;
+        }
+        
+        #rightside {
+            width: 100%;
+            padding: 0 16px;
+            
+            img {
+                width: 100%;
+                
+            }
+        }
+
+    }
+    
+}
 /* ABOUT END */
 
 
@@ -281,78 +415,16 @@ footer {
     height: 3000px;
     position: relative;
     overflow: hidden;
+
     ul {
         list-style: none;
     }
-    
+
     img {
         position: absolute;
     }
-    
+
 }
 
 
 /* LOOSE ARCHIVES END */
-
-
-
-/* MOBILE */
-
-@media only screen and (max-width: 768px) {
-
-    /* HEADER */
-    header {
-        flex-direction: column;
-        padding: 30px 20px;
-        height: 70vh;
-        position: static;
-        top: 0;
-        left: 0;
-
-        #header-title h1 {
-            font-size: 40px;
-        }
-    }
-
-    /* HEADER END */
-    /* MAIN */
-    main article h3 {
-        padding: 0 20px;
-        font-size: 30px;
-    }
-
-    .work:hover {
-        background-color: lightcoral;
-        transform: unset;
-    }
-
-    .work-container {
-        flex-direction: column;
-    }
-
-    .work-left {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .work-right {
-        width: 100%;
-        max-height: 300px;
-    }
-
-    .work-right ul,
-    .work-right ul li,
-    .work-right ul img {
-        max-height: 300px;
-    }
-
-    /* MAIN END */
-    /* FOOTER */
-    footer {
-        position: relative;
-    }
-
-    /* FOOTER END */
-}
-
-/* MOBILE END */
