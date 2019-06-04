@@ -20,7 +20,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img src="{{ image | relative_url }}">
+            <img class="lazy" src="{{ image | relative_url }}">
         </li>
         {% endfor %}
     </ul>
