@@ -27,7 +27,7 @@ images:
             $(function() {
                 $('.lazy').Lazy({
                     effect: "fadeIn",
-                    effectTime: 1000
+                    effectTime: 500
                 });
             });
         </script>
