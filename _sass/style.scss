@@ -231,6 +231,9 @@ footer {
 
     h4 {
         font-weight: 300;
+        p {
+            display: inline-block;
+        }
     }
 }
 
@@ -295,14 +298,15 @@ footer {
     footer {
         position: relative;
         padding: 0 10vw;
-        h4 {
-            
+        h4 p {
+            display: block;
         }
         a {
             text-decoration: underline;
             font-size: 20px;
             margin-top: 20px;
         }
+        
     }
 
     /* FOOTER END */
@@ -412,7 +416,7 @@ footer {
 
 #loose-archives section {
     width: 100vw;
-    height: 3000px;
+    height: 2500px;
     position: relative;
     overflow: hidden;
 
