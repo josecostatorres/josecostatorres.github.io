@@ -136,12 +136,12 @@
     function imageSize() {
         var images = document.getElementsByTagName("img");
         for (i = 0; i < images.length; i++) {
-            var randomWidth = Math.floor(Math.random() * 400) + 300;
-            images[i].style.width = randomWidth + 'px';
-            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
+            var randomHeight = Math.floor(Math.random() * 300) + 200;
+            images[i].style.height = randomHeight + 'px';
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomHeight)) + 0;
             images[i].style.left = randomLeft + 'px';
             var randomTop = Math.floor(Math.random() * 3000) + 000;
-            console.log(i, randomWidth, randomLeft);
+            console.log(i, randomHeight, randomLeft);
             images[i].style.top = randomTop + 'px';
         }
     }

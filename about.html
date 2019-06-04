@@ -115,9 +115,20 @@
 
 
 </div>
-</main><footer>
+</main><script>
+
+    $(function() {
+        $('.lazy').Lazy({
+            appendScroll: $(this).parent().parent(),
+            effect: "fadeIn",
+            effectTime: 600
+        });
+    });
+    
+</script>
+<footer>
     <h4>Cosmvs © All rights reserved and stuff</h4>
-    <h4>Website by <a href="brunobrunodesigndesign.com">brunobrunodesigndesign</a></h4>
+    <h4>Website by <a href="https://brunobrunodesigndesign.com" target="_blank">brunobrunodesigndesign</a></h4>
 </footer>
 
 </body>
