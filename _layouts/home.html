@@ -28,6 +28,15 @@ title: home
 <script>
     var $ = jQuery.noConflict();
     $(document).ready(function() {
+        
+        $(function() {
+            $('.lazy').Lazy({
+                effect: "fadeIn",
+                effectTime: 1000
+            });
+        });
+        
+        
         $('.work h3').on('click', function() {
             if ($(this).parent().hasClass('closed')) {
                 $(this).on('mouseleave', function() {
