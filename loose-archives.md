@@ -44,13 +44,11 @@ images:
         containment: 'body'
     })
     var $ = jQuery.noConflict();
-    $(document).ready(function() {
-        window.onload = function() {
-            $('.lazy').Lazy({
-                effect: "fadeIn",
-                effectTime: 1000
-            });
-            console.log('teste');
-        };
-    });
+    window.onload = function() {
+        $('.lazy').Lazy({
+            effect: "fadeIn",
+            effectTime: 1000
+        });
+        console.log('teste');
+    };
 </script>
