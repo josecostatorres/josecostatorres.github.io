@@ -20,14 +20,14 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=30&output=jpg">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=600&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=25&output=jpg">
         </li>
         {% endfor %}
         <script>
             $(function() {
                 $('.lazy').Lazy({
                     effect: "fadeIn",
-                    effectTime: 500,
+                    effectTime: 50,
                     threshold: 200,
                     scrollDirection: "vertical"
                 });
@@ -40,11 +40,14 @@ images:
     function imageSize() {
         var images = document.getElementsByTagName("img");
         for (i = 0; i < images.length; i++) {
-            var randomHeight = Math.floor(Math.random() * 300) + 200;
-            images[i].style.height = randomHeight + 'px';
-            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomHeight)) + 0;
+            var min = 400;
+            var max = 500;
+            var randomWidth = Math.floor(Math.random() * (max - min + 1) + min);
+            images[i].style.width = randomWidth + 'px';
+            var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
             var randomTop = Math.floor(Math.random() * 2500) + 000;
+            console.log(window.innerWidth, randomWidth);
             images[i].style.top = randomTop + 'px';
         }
     }
