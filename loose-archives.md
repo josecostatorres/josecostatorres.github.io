@@ -2,20 +2,10 @@
 layout: loose-archives
 title: Loose Archives
 images:
-- "/uploads/2019-05/CLIX.png"
-- "/uploads/2019-05/CLX.png"
-- "/uploads/2019-05/CLI.png"
-- "/uploads/2019-05/CLV.png"
-- "/uploads/2019-05/CLIII.png"
-- "/uploads/2019-05/apresentação-digi-1.png"
-- "/uploads/2019-05/família.png"
-- "/uploads/2019-05/apresentação-digi-5.png"
-- "/uploads/2019-05/apresentação-digi-4.png"
-- "/uploads/2019-05/apresentação-digi-3.png"
-- "/uploads/2019-05/apresentação-digi-2.png"
-- "/uploads/2019-05/apresentação-digi-6.png"
----
+- "/uploads/large/2019-tumblr_o9owczy8wR1t90cl6o1_500.png"
+- "/uploads/large/2019-tumblr_o7lrmrpWkG1t90cl6o1_500.png"
 
+---
 <section>
     <ul>
         {% for image in page.images %}
