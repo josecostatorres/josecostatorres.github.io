@@ -20,14 +20,16 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=80">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=30&output=jpg">
         </li>
         {% endfor %}
         <script>
             $(function() {
                 $('.lazy').Lazy({
                     effect: "fadeIn",
-                    effectTime: 500
+                    effectTime: 500,
+                    threshold: 200,
+                    scrollDirection: "vertical"
                 });
             });
         </script>
@@ -42,7 +44,7 @@ images:
             images[i].style.height = randomHeight + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomHeight)) + 0;
             images[i].style.left = randomLeft + 'px';
-            var randomTop = Math.floor(Math.random() * 3000) + 000;
+            var randomTop = Math.floor(Math.random() * 2500) + 000;
             images[i].style.top = randomTop + 'px';
         }
     }

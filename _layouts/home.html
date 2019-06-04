@@ -55,11 +55,7 @@ title: home
                     effect: "fadeIn",
                     effectTime: 500,
                     threshold: 200,
-                    scrollDirection: "horizontal",
-                    visibleOnly: true,
-                    afterLoad: function(element) {
-                        console.log('image "' + element.data('src') + '" was loaded successfully');
-                    }
+                    scrollDirection: "horizontal"
                 });
 
             } else if ($(this).parent().hasClass('work-open')) {
