@@ -27,7 +27,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=600&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=25&output=jpg">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=600&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=25&output=webp" alt="Random image of something I made.">
         </li>
         {% endfor %}
         <script>
@@ -54,7 +54,6 @@ images:
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
             var randomTop = Math.floor(Math.random() * (2500 - 1 + 1) + 1);
-            console.log(window.innerWidth, randomWidth);
             images[i].style.top = randomTop + 'px';
         }
     }
@@ -68,7 +67,6 @@ images:
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
             var randomTop = Math.floor(Math.random() * (2500 - 1 + 1) + 1);
-            console.log(window.innerWidth, randomWidth);
             images[i].style.top = randomTop + 'px';
         }
     }
@@ -77,8 +75,20 @@ images:
     } else {
         imageSizeDesktop();
     }
-    var $draggable = $('img').draggabilly({
-        containment: 'body'
-    })
     
+    var $ = jQuery.noConflict();
+    $(document).ready(function() {
+        var $draggable = $('img').draggabilly({
+            containment: 'body'
+        })
+        $("img").on('click mousedown', function () {
+            var curr_index = $(this).css("z-index") + 1;
+            $(this).css({
+                'z-index': curr_index
+            });
+            $("img").not(this).css({
+                'z-index': 0
+            });
+        })
+    })
 </script>

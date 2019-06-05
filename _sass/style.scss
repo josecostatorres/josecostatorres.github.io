@@ -206,6 +206,8 @@ main {
                 img {
                     height: 100%;
                     object-fit: contain;
+                    cursor: e-resize;
+                    cursor: url(/uploads/seta.png) -50 -50, e-resize;
 
                     &:hover {
                         filter: none;
@@ -289,6 +291,7 @@ footer {
             
             .scroller, li, img {
                 max-height: 300px;
+                
             }
         }
 
@@ -428,6 +431,7 @@ footer {
 
     img {
         position: absolute;
+        z-index: 0;
     }
 
 }
