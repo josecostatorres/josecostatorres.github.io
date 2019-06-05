@@ -40,7 +40,7 @@ image: "/uploads/2019-05/CLIII.png"
     <p><a href="mailto:josecostatorres@gmail.com">josecostatorres@gmail.com</a><br><a href="https://wa.me/351911070975" target="_blank" rel="noreferrer">00351 911 070 975</a></p>
     </article>
     <article>
-        <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=600&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=25&output=jpg">
+        <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ page.image }}&h=600&q=80&output=jpg">
     </article>
 </section>
 
