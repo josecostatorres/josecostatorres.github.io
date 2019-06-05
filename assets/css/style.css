@@ -60,7 +60,10 @@ header {
   z-index: 3; }
   header #header-title * {
     margin: 0;
-    font-size: 30px; }
+    font-size: 30px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; }
   header nav ul {
     text-align: right;
     font-size: 28px;
