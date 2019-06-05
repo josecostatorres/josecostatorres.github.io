@@ -5,7 +5,7 @@ category: Identity
 description: Event of creation and design show in Caldas da Rainha spread throughout
   the city.
 link: ''
-cor_principal: rgb(229, 75, 16)
+cor_principal: rgb(235, 98, 26)
 cor_secundaria: rgb(0, 0, 0)
 images:
 - "/uploads/2019-05/apresentação-digi-1.png"
