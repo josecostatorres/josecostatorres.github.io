@@ -2,8 +2,7 @@
 ano: 2016
 title: PESADO
 category: Identity, Poster Design
-description: "Creative direction for Noite Pesado. \nNoite Pesado is a night of some
-  surpluses."
+description: "Creative direction for \"Pesado\". \n\"Pesado\" is a night of some surpluses."
 link: ''
 cor_principal: rgb(255, 0, 153)
 cor_secundaria: rgb(0, 0, 0)
