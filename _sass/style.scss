@@ -4,15 +4,12 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
-
 ::-webkit-scrollbar-track {
     background: black;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #fff
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: darkgray
 }
@@ -20,6 +17,7 @@
 
 * {
     box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
