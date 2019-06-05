@@ -76,6 +76,9 @@ header {
     #header-title * {
         margin: 0;
         font-size: 30px;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
     }
 
     nav ul {
