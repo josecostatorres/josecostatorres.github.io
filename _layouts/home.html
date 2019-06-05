@@ -18,7 +18,7 @@ title: home
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
             <ul class="scroller">
                 {% for image in work.images %}
-                <li><img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=80&output=jpg" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=20&output=jpg"></li>
+                <li><img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=80&output=webp" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=20&output=jpg"></li>
                 {% endfor %}
             </ul>
         </div>
@@ -31,11 +31,7 @@ title: home
     var $ = jQuery.noConflict();
     $(document).ready(function() {
 
-        $('.scroller li:first-of-type .lazy').Lazy({
-            afterLoad: function(element) {
-                console.log('image "' + element.data('src') + '" was loaded successfully');
-            }
-        });
+        $('.scroller li:first-of-type .lazy').Lazy();
 
         $('.work h3').on('click', function() {
             if ($(this).parent().hasClass('closed')) {
@@ -56,12 +52,9 @@ title: home
                 $(this).parent().find('img.lazy').Lazy({
                     effect: "fadeIn",
                     effectTime: 60,
-                    threshold: 100,
+                    threshold: 300,
                     scrollDirection: 'horizontal',
-                    appendScroll: $('.work-right'),
-                    afterLoad: function(element) {
-                        console.log('image "' + element.data('src') + '" was loaded successfully');
-                    }
+                    appendScroll: $('.work-right')
                 });
 
             } else if (!$(this).parent().hasClass('work-open')) {
