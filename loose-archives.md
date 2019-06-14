@@ -2,6 +2,7 @@
 layout: loose-archives
 title: Loose Archives
 images:
+- "/uploads/2019-06/FLYER-PRO-REGULAR.png"
 - "/uploads/2019-06/instagram-size-cosmvs-logo-8bip.gif"
 - "/uploads/2019-06/PANGEIA.png"
 - "/uploads/2019-06/ORDENHAR.png"
