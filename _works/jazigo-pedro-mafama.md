@@ -7,6 +7,7 @@ link: ''
 cor_principal: rgb(215, 181, 132)
 cor_secundaria: rgb(255, 255, 255)
 images:
+- "/uploads/2019-06/SEQUENCIA_TESTE.mp4"
 - "/uploads/2019-06/3-1.png"
 - "/uploads/2019-06/1.png"
 - "/uploads/2019-06/2.png"
