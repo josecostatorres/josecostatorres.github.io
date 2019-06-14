@@ -5,7 +5,7 @@ category: Type
 description: Concept and visuals for Pedro Mafama’s lyric video, “Arder Contigo”.
 link: ''
 cor_principal: rgb(215, 181, 132)
-cor_secundaria: rgb(255, 255, 255)
+cor_secundaria: rgb(215, 181, 132)
 images:
 - "/uploads/2019-06/CRÉDITO-1.png"
 - "/uploads/2019-06/CRÉDITO-2.png"
