@@ -1,6 +1,6 @@
 ---
-ano: 2018
-title: '"JAZIGO"—PEDRO MAFAMA'
+ano: 2019
+title: '"ARDER CONTIGO"—PEDRO MAFAMA'
 category: Type
 description: Graphics and end credits for Pedro Mafama’s video “JAZIGO” directed by
   Follow Creative Studio.
@@ -14,7 +14,7 @@ images:
 - "/uploads/2019-06/intro.png"
 - "/uploads/2019-06/GIF.gif"
 link-group:
-- link: https://www.youtube.com/watch?v=eVo2kzO6cXQ
+- link: https://www.youtube.com/watch?v=9VjMZ0GmWVA
   link_text: Link
 published: false
 
