@@ -1,11 +1,11 @@
 ---
-ano: 2014
-title: DÍNAMO NOTEBOOKS
-category: Notebooks
-description: "A5 \"Dínamo\" Notebook \n80 Pages \nCover 280 grams, offset printing
-  \nInside pages Conqueror Paper"
+ano: 2018
+title: '"JAZIGO"—PEDRO MAFAMA'
+category: Type
+description: Graphics and end credits for Pedro Mafama’s video “JAZIGO” directed by
+  Follow Creative Studio.
 link: ''
-cor_principal: rgb(255, 0, 0)
+cor_principal: rgb(74, 144, 226)
 cor_secundaria: rgb(255, 255, 255)
 images:
 - "/uploads/2019-05/6.png"
@@ -15,6 +15,9 @@ images:
 - "/uploads/2019-05/2.png"
 - "/uploads/2019-05/1.png"
 - "/uploads/2019-05/família.png"
+link-group:
+- link: https://www.youtube.com/watch?v=eVo2kzO6cXQ
+  link_text: Link
 published: false
 
 ---
