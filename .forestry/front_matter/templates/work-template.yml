@@ -67,6 +67,7 @@ fields:
   config: {}
   label: Imagens
 pages:
+- _works/jazigo-pedro-mafama.md
 - _works/dínamo-notebooks-1.md
 - _works/personal-cards-2018.md
 - _works/enabled-for-disabled.md
