@@ -85,7 +85,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=600&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&q=25&output=jpg" alt="Random image of something I made.">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=500&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=1&q=10&output=jpg" alt="Random image of something I made.">
         </li>
         {% endfor %}
         <script>
