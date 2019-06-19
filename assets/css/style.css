@@ -131,24 +131,6 @@ main {
     padding: 15px 30px; }
     .work .work-left h4 {
       margin: 5px 0; }
-  .work .arrow-nav {
-    width: 65%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    display: flex; }
-    .work .arrow-nav .toleft {
-      height: 100%;
-      width: 50%;
-      cursor: e-resize;
-      cursor: url(/uploads/seta-left.png) -50 -50, e-resize; }
-    .work .arrow-nav .toright {
-      height: 100%;
-      width: 50%;
-      cursor: e-resize;
-      cursor: url(/uploads/seta-right.png) -50 -50, e-resize; }
   .work .work-right {
     width: 65%;
     overflow-y: hidden;
@@ -295,7 +277,7 @@ footer {
 /* LOOSE ARCHIVES */
 #loose-archives section {
   width: 100vw;
-  height: 4000px;
+  height: 5500px;
   position: relative;
   overflow: hidden; }
   #loose-archives section ul {
