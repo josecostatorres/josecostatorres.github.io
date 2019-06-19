@@ -85,7 +85,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=400&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=1&q=10&output=jpg" alt="Random image of something I made.">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=400&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=1&w=1&q=10&output=jpg" alt="Random image of something I made.">
         </li>
         {% endfor %}
         <script>
@@ -111,7 +111,7 @@ images:
             images[i].style.width = randomWidth + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
-            var randomTop = Math.floor(Math.random() * (2500 - 1 + 1) + 1);
+            var randomTop = Math.floor(Math.random() * (3500 - 1 + 1) + 1);
             images[i].style.top = randomTop + 'px';
         }
     }
@@ -124,7 +124,7 @@ images:
             images[i].style.width = randomWidth + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
-            var randomTop = Math.floor(Math.random() * (2500 - 1 + 1) + 1);
+            var randomTop = Math.floor(Math.random() * (3500 - 1 + 1) + 1);
             images[i].style.top = randomTop + 'px';
         }
     }
