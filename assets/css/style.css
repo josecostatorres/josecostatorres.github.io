@@ -120,8 +120,7 @@ main {
     position: relative;
     display: flex;
     flex-direction: row;
-    min-height: 300px;
-    max-height: 500px;
+    height: 500px;
     font-size: 18px;
     display: none;
     cursor: default;
@@ -202,7 +201,7 @@ footer {
     .work .work-right .scroller,
     .work .work-right li,
     .work .work-right img {
-      max-height: 300px; }
+      max-height: 400px; }
 
   /* MAIN END */
   /* FOOTER */
