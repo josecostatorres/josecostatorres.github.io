@@ -25,5 +25,8 @@ images:
 link-group:
 - link: https://www.youtube.com/watch?v=9VjMZ0GmWVA
   link_text: Link
+links:
+- url: https://youtube.com
+  text: Link
 
 ---
