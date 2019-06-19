@@ -85,14 +85,14 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=400&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=1&w=1&q=10&output=jpg" alt="Random image of something I made.">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=400&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=2&w=2&q=10&output=jpg" alt="Random image of something I made.">
         </li>
         {% endfor %}
         <script>
             $(function() {
                 $('.lazy').Lazy({
                     effect: "fadeIn",
-                    effectTime: 50,
+                    effectTime: 500,
                     threshold: 200,
                     scrollDirection: "vertical"
                 });

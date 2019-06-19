@@ -12,10 +12,11 @@ title: home
             <h4>{{ work.category }}</h4>
             <p>{{ work.description }}</p>
             {% for link-group in page.link-groups %}
-                <a href="{{ link-group.link }}">{{ link-group.linktext }}</a>
+            <a href="{{ link-group.link }}">{{ link-group.linktext }}</a>
             {% endfor %}
         </div>
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
+
             <ul class="scroller">
                 {% for image in work.images %}
                 <li><img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=450&q=20&output=jpg" alt="Image of this project I did."></li>
@@ -62,17 +63,31 @@ title: home
             }
         });
 
-
-        $('.work-right').mousedown(function() {
-            $(this).stop().animate({
-                scrollLeft: '+=300'
-            }, 100);
-            setTimeout(function() {
+        $(".work-right").mousemove(function(e) {
+            var pWidth = $(this).innerWidth(); //use .outerWidth() if you want borders
+            var pOffset = $(this).offset();
+            var x = e.pageX - pOffset.left;
+            if (pWidth / 2 > x) {
+                $(this).css({'cursor':'url(/uploads/seta-left.png) 50 50, e-resize'});
+            } else {
+               $(this).css({'cursor':'url(/uploads/seta-right.png) 100 50, e-resize'});
+        }
+        });
+        
+        $(".work-right").click(function(e) {
+            var pWidth = $(this).innerWidth(); //use .outerWidth() if you want borders
+            var pOffset = $(this).offset();
+            var x = e.pageX - pOffset.left;
+            if (pWidth / 2 > x) {
                 $(this).stop().animate({
-                    scrollLeft: '0'
-                }, 100)
-            }, 7000);
-        })
+                    scrollLeft: '-=300'
+                }, 100);
+            } else {
+                $(this).stop().animate({
+                    scrollLeft: '+=300'
+                }, 100);
+        }
+        });
 
     });
 
