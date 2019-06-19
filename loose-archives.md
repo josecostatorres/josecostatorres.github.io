@@ -85,7 +85,7 @@ images:
     <ul>
         {% for image in page.images %}
         <li>
-            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=500&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=1&q=10&output=jpg" alt="Random image of something I made.">
+            <img class="lazy" data-src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=400&q=80" src="https://images.weserv.nl?url=https://josecostatorres.github.io{{ image }}&h=1&q=10&output=jpg" alt="Random image of something I made.">
         </li>
         {% endfor %}
         <script>
@@ -105,8 +105,8 @@ images:
     function imageSizeDesktop() {
         var images = document.getElementsByTagName("img");
         for (i = 0; i < images.length; i++) {
-            var min = 300;
-            var max = 400;
+            var min = 200;
+            var max = 300;
             var randomWidth = Math.floor(Math.random() * (max - min + 1) + min);
             images[i].style.width = randomWidth + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
