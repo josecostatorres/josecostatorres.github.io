@@ -22,11 +22,7 @@ images:
 - "/uploads/2019-06/NHA-BARRIGA.png"
 - "/uploads/2019-06/CRÉDITO-2.png"
 - "/uploads/2019-06/CRÉDITO-1.png"
-link-group:
-- link: https://www.youtube.com/watch?v=9VjMZ0GmWVA
-  link_text: Link
-links:
-- url: https://youtube.com
+link:
+- url: https://www.youtube.com/watch?v=9VjMZ0GmWVA
   text: Link
-
 ---
