@@ -117,6 +117,7 @@ main {
   .work h3 {
     cursor: pointer; }
   .work .work-container {
+    position: relative;
     display: flex;
     flex-direction: row;
     min-height: 300px;
@@ -130,9 +131,26 @@ main {
     padding: 15px 30px; }
     .work .work-left h4 {
       margin: 5px 0; }
+  .work .arrow-nav {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: flex; }
+    .work .arrow-nav .toleft {
+      height: 100%;
+      width: 50%;
+      cursor: e-resize;
+      cursor: url(/uploads/seta-left.png) -50 -50, e-resize; }
+    .work .arrow-nav .toright {
+      height: 100%;
+      width: 50%;
+      cursor: e-resize;
+      cursor: url(/uploads/seta-right.png) -50 -50, e-resize; }
   .work .work-right {
     width: 65%;
-    overflow: scroll;
     overflow-y: hidden;
     scrollbar-color: black; }
     .work .work-right ul {
@@ -147,9 +165,7 @@ main {
         height: 100%; }
         .work .work-right ul li img {
           height: 100%;
-          object-fit: contain;
-          cursor: e-resize;
-          cursor: url(/uploads/seta.png) -50 -50, e-resize; }
+          object-fit: contain; }
           .work .work-right ul li img:hover {
             filter: none; }
 
@@ -199,8 +215,11 @@ footer {
     padding: 15px; }
   .work .work-right {
     width: 100%;
-    height: 50%; }
-    .work .work-right .scroller, .work .work-right li, .work .work-right img {
+    height: 50%;
+    position: relative; }
+    .work .work-right .scroller,
+    .work .work-right li,
+    .work .work-right img {
       max-height: 300px; }
 
   /* MAIN END */
