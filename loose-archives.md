@@ -111,7 +111,7 @@ images:
             images[i].style.width = randomWidth + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
-            var randomTop = Math.floor(Math.random() * (3500 - 1 + 1) + 1);
+            var randomTop = Math.floor(Math.random() * (5000 - 1 + 1) + 1);
             images[i].style.top = randomTop + 'px';
         }
     }
@@ -124,7 +124,7 @@ images:
             images[i].style.width = randomWidth + 'px';
             var randomLeft = Math.floor(Math.random() * (window.innerWidth - randomWidth)) + 0;
             images[i].style.left = randomLeft + 'px';
-            var randomTop = Math.floor(Math.random() * (3500 - 1 + 1) + 1);
+            var randomTop = Math.floor(Math.random() * (5000 - 1 + 1) + 1);
             images[i].style.top = randomTop + 'px';
         }
     }
