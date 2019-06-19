@@ -19,15 +19,15 @@ fields:
 - type: text
   name: category
   label: Category
-- name: link-group
+- name: links
   type: field_group_list
   fields:
-  - name: link
+  - name: url
     type: text
     config:
       required: false
-    label: Link
-  - name: link_text
+    label: URL
+  - name: text
     type: select
     default: ''
     config:
@@ -46,7 +46,7 @@ fields:
     min: 
     max: 
     labelField: ''
-  label: Link-group
+  label: Links
 - type: textarea
   name: description
   label: Description
