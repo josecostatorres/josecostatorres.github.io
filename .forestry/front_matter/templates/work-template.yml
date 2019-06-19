@@ -36,6 +36,7 @@ fields:
       - Website
       - Link
       - More
+      - Video
       source:
         type: simple
         section: ''
