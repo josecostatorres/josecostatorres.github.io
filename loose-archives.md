@@ -97,6 +97,7 @@ images:
                     scrollDirection: "vertical"
                 });
             });
+
         </script>
     </ul>
 </section>
@@ -115,6 +116,7 @@ images:
             images[i].style.top = randomTop + 'px';
         }
     }
+
     function imageSizeMobile() {
         var images = document.getElementsByTagName("img");
         for (i = 0; i < images.length; i++) {
@@ -133,13 +135,13 @@ images:
     } else {
         imageSizeDesktop();
     }
-    
+
     var $ = jQuery.noConflict();
     $(document).ready(function() {
         var $draggable = $('img').draggabilly({
             containment: 'body'
         })
-        $("img").on('click mousedown', function () {
+        $("img").on('click mousedown', function() {
             var curr_index = $(this).css("z-index") + 1;
             $(this).css({
                 'z-index': curr_index
@@ -149,4 +151,6 @@ images:
             });
         })
     })
+
+
 </script>
