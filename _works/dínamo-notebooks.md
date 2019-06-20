@@ -8,7 +8,6 @@ description: |-
   The motto "Enabled for Disabled" needs to exalt equal opportunities and rights for people with disabilities.
 
   As designers we have the role to combat discrimination, inequality and ensure that every one are considered equal members of society.
-link: ''
 cor_principal: rgb(255, 236, 0)
 cor_secundaria: rgb(0, 0, 0)
 images:

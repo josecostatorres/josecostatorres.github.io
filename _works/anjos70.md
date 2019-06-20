@@ -4,7 +4,6 @@ title: DÍNAMO NOTEBOOKS
 category: Notebooks
 description: "A5 \"Dínamo\" Notebook \n80 Pages \nCover 280 grams, offset printing
   \nInside pages Conqueror Paper"
-link: ''
 cor_principal: rgb(255, 0, 0)
 cor_secundaria: rgb(255, 255, 255)
 images:

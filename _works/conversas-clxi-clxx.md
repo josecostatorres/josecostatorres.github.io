@@ -6,7 +6,6 @@ description: |-
   Graphic design and concept for Conversas CLXI—CLXX.
 
   Conversas is a series of weekly informal meetings made so that we can get to know and discuss projects and interests.
-link: ''
 cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
 images:
