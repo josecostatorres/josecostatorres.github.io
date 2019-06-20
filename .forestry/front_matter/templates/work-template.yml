@@ -68,12 +68,12 @@ fields:
   config: {}
   label: Imagens
 pages:
+- _works/dínamo-notebooks.md
+- _works/conversas-clxi-clxx-1.md
 - _works/jazigo-pedro-mafama.md
 - _works/dínamo-notebooks-1.md
 - _works/personal-cards-2018.md
 - _works/enabled-for-disabled.md
-- _works/conversas-clxi-clxx-1.md
 - _works/conversas-clxi-clxx.md
-- _works/dínamo-notebooks.md
 - _works/caldas-design-week-1.md
 - _works/anjos70.md
