@@ -12,7 +12,7 @@ title: home
             <h4>{{ work.category }}</h4>
             <p>{{ work.description }}</p>
             {% for link in work.links %}
-                <a href="{{ link.url }}">{{ link.text }}</a>
+                <a href="{{ link.url }}" target="_blank" rel="noreferrer">{{ link.text }}</a>
             {% endfor %}
         </div>
         <div class="work-right" style="background-color: {{ work.cor_secundaria }}">
