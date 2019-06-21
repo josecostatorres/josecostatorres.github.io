@@ -8,12 +8,12 @@ description: "Creative direction for FRESH PRINCE. \nSpecial Monday at Musicbox,
 cor_principal: rgb(255, 0, 153)
 cor_secundaria: rgb(0, 0, 0)
 images:
-- "/uploads/2019-06/cara-fundo-preto.png"
-- "/uploads/2019-06/cartazes-gif.gif"
-- "/uploads/2019-06/cartaz-pesado30DEZ15.png"
-- "/uploads/2019-06/tumblr_nuixhibpmG1t90cl6o1_1280.png"
-- "/uploads/2019-06/tumblr_nuixhyiMOs1t90cl6o1_1280.png"
-- "/uploads/2019-06/sorriso-maroto.png"
+- "/uploads/2019-06/head-2.png"
+- "/uploads/2019-06/type-avacalho.png"
+- "/uploads/2019-06/covers-mix.png"
+- "/uploads/2019-06/fresh-poster.png"
+- "/uploads/2019-06/puzzle-poster.png"
+- "/uploads/2019-06/creepy.png"
 links: []
 
 ---
