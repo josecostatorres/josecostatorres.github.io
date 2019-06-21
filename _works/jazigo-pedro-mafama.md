@@ -23,5 +23,6 @@ images:
 - "/uploads/2019-06/CRÉDITO-1.png"
 links:
 - url: https://www.youtube.com/watch?v=9VjMZ0GmWVA
-  text: Link
+  text: Video
+
 ---
