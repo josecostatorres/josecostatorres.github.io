@@ -2,7 +2,7 @@
 ano: 2017
 title: MARLON BRANCO
 category: Identity, Poster Design
-description: "Creative direction for \"Marlon Branco\". \n\"Marlon Branco\" is a dj."
+description: "Creative direction for Marlon Branco. \nMarlon Branco is a dj."
 cor_principal: rgb(255, 102, 51)
 cor_secundaria: rgb(0, 0, 0)
 images: []
