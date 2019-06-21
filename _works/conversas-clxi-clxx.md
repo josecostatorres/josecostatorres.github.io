@@ -9,15 +9,8 @@ description: |-
 cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
 images:
-- "/uploads/2019-05/10.png"
-- "/uploads/2019-05/9-1.png"
-- "/uploads/2019-05/8-1.png"
-- "/uploads/2019-05/7-1.png"
-- "/uploads/2019-05/6-2.png"
-- "/uploads/2019-05/5-2.png"
-- "/uploads/2019-05/4-2.png"
-- "/uploads/2019-05/3-2.png"
-- "/uploads/2019-05/2-2.png"
-- "/uploads/2019-05/1-3.png"
+- "/uploads/2019-06/2-1.png"
+- "/uploads/2019-06/1-1.png"
+links: []
 
 ---
