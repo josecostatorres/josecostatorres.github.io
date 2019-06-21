@@ -4,7 +4,7 @@ title: CALDAS DESIGN WEEK 1
 category: Identity
 description: Event of creation and design show in Caldas da Rainha spread throughout
   the city.
-cor_principal: rgb(235, 98, 26)
+cor_principal: rgb(255, 109, 30)
 cor_secundaria: rgb(0, 0, 0)
 images:
 - "/uploads/2019-06/apresentação-digi-6.png"
