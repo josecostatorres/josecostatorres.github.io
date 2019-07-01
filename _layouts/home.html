@@ -2,8 +2,8 @@
 layout: default
 title: home
 ---
-
-{% for work in site.works %}
+{% assign ordered_pages = site.works | sort:"ano" | reverse %}
+{% for work in ordered_pages %}
 <article class="work closed" style="background-color: {{ work.cor_principal }}">
     <h3>{{ work.title }}</h3>
     <div class="work-container">
