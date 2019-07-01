@@ -104,7 +104,6 @@ main {
 
 #home {
     width: 100%;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 
@@ -165,8 +164,7 @@ main {
     h3 {
         cursor: pointer;
     }
-
-
+    
     .work-container {
         position: relative;
         display: flex;
