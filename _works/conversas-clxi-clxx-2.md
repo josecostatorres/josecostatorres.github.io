@@ -9,6 +9,8 @@ cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
 images: []
 links:
+- url: https://bru-no.com/
+  text: More
 - url: https://anjos70.org/
   text: Website
 published: false
