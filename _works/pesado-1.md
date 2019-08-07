@@ -1,6 +1,6 @@
 ---
 ano: 2019
-title: FRESH PRINCE
+title: VICARA-CATALOG
 category: Catalog Design
 description: Creative direction for Vicara's new catalog.
 cor_principal: rgb(80, 227, 194)
