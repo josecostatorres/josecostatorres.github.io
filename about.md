@@ -15,7 +15,7 @@ lectures:
 - title: ESAD World Graphics Day
   year: 2016
   link: https://www.esad.pt/pt/news/esad-world-graphics-day-2016
-image: "/uploads/2019-06/TORRES-EM-LISBOA.png"
+image: "/uploads/2019-10/info2.0.png"
 
 ---
 <section id="leftside">
