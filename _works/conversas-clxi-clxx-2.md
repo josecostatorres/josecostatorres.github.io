@@ -7,12 +7,12 @@ description: |-
   The website changes monthly to accommodate the ever changing events hosted on the venue, but also the design chosen for each month.
 cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
-images: []
+images:
+- "/uploads/2019-10/10.png"
 links:
 - url: https://bru-no.com/
   text: More
 - url: https://anjos70.org/
   text: Website
-published: false
 
 ---
