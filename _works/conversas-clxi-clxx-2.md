@@ -5,7 +5,7 @@ category: WEBDESIGN
 description: |-
   Concept and design of Anjos70 website. Implementation and code by Bruno Santos.
   The website changes monthly to accommodate the ever changing events hosted on the venue, but also the design chosen for each month.
-cor_principal: rgb(187, 187, 187)
+cor_principal: rgb(236, 91, 44)
 cor_secundaria: rgb(255, 255, 255)
 images:
 - "/uploads/2019-10/1.png"
