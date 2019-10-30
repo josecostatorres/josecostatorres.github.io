@@ -8,6 +8,7 @@ description: |-
 cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
 images:
+- "/uploads/2019-10/9.png"
 - "/uploads/2019-10/10.png"
 links:
 - url: https://bru-no.com/
