@@ -8,6 +8,8 @@ description: |-
 cor_principal: rgb(187, 187, 187)
 cor_secundaria: rgb(255, 255, 255)
 images:
+- "/uploads/2019-10/1.png"
+- "/uploads/2019-10/2.png"
 - "/uploads/2019-10/3.png"
 - "/uploads/2019-10/4.png"
 - "/uploads/2019-10/5.png"
