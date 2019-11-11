@@ -6,13 +6,16 @@ bio: Independent graphic and art direction bureau based in Lisboa-P.T. run by Jo
   typographic work for comercial and cultural spheres. Including posters, publications,
   sites, exhibitions and identities.<br>Would love to hear from you.<br>
 lectures:
+- year: 2019
+  title: THE DESIGN KIDS-INTERVIEW
+  link: https://thedesignkids.org/interviews/jose-torres
 - title: Conversas Lisboa
   year: 2017
   link: https://www.facebook.com/conversaslisboa/photos/gm.130234881084610/1358338434295870/?type=3&theater
 - title: ESAD World Graphics Day
   year: 2016
   link: https://www.esad.pt/pt/news/esad-world-graphics-day-2016
-image: "/uploads/2019-06/TORRES-EM-LISBOA.png"
+image: "/uploads/2019-11/info2.0.png"
 
 ---
 <section id="leftside">
