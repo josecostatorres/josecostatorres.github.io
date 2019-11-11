@@ -1,7 +1,9 @@
 var $ = jQuery.noConflict();
     $(document).ready(function() {
 
-        $('.scroller li:first-of-type .lazy').Lazy();
+        $('.scroller li:first-of-type .lazy').Lazy({
+				    bind: 'event'
+				});
 
         $('.work h3').on('click', function() {
             if ($(this).parent().hasClass('closed')) {
@@ -42,7 +44,7 @@ var $ = jQuery.noConflict();
                $(this).css({'cursor':'url(/uploads/seta-right.png) 100 50, e-resize'});
         }
         });
-        
+
         $(".work-right").click(function(e) {
             var pWidth = $(this).innerWidth(); //use .outerWidth() if you want borders
             var pOffset = $(this).offset();
