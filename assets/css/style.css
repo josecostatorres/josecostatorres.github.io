@@ -1,0 +1,386 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  background-color: #000;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.hidden {
+  visibility: hidden;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 20px 30px 15px;
+  margin-bottom: 15px;
+  background: transparent;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+24,000000+100&1+52,0+100 */
+  background: -moz-linear-gradient(top, black 24%, black 60%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, black 24%, black 60%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 24%, black 60%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header #header-title {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+header #header-title * {
+  margin: 0;
+  font-size: 30px;
+}
+
+header nav ul {
+  text-align: right;
+  font-size: 28px;
+  list-style: none;
+  margin: 0;
+}
+
+/* HEADER END */
+/* MAIN CONTENT */
+main {
+  width: 100vw;
+}
+
+#home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+#home article {
+  background-color: lightcoral;
+}
+
+#home article h3 {
+  font-size: 45px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 30px;
+  user-select: none;
+}
+
+.work-open {
+  cursor: pointer;
+  background-color: floralwhite;
+  transform: translateY(-5px);
+  transition: all .06s;
+  padding-bottom: 0 !important;
+  margin-bottom: -5px;
+}
+
+.work {
+  border: 2px solid black;
+  border-bottom: 0;
+  transition: all .06s;
+}
+
+@media only screen and (min-width: 768px) {
+  .work:hover {
+    cursor: pointer;
+    background-color: floralwhite;
+    transform: translateY(-5px);
+    transition: all .06s;
+    padding-bottom: 10px;
+    margin-bottom: -5px;
+  }
+}
+
+.work h3 {
+  cursor: pointer;
+}
+
+.work .work-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  display: none;
+  cursor: default;
+  margin-top: 10px;
+  min-height: 600px;
+}
+
+.work .work-left {
+  width: 35%;
+  padding: 15px 30px;
+}
+
+.work .work-left h4 {
+  margin: 5px 0;
+}
+
+.work .work-left a {
+  font-size: 20px;
+  margin: 15px 0;
+  color: black;
+  text-decoration: underline;
+}
+
+.work .work-right {
+  width: 65%;
+  overflow-y: hidden;
+  scrollbar-color: black;
+}
+
+.work .work-right ul {
+  height: 100%;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.work .work-right ul li {
+  list-style: none;
+  height: 100%;
+}
+
+.work .work-right ul li img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.work .work-right ul li img:hover {
+  filter: none;
+}
+
+/* MAIN CONTENT END */
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 80px;
+  margin: 100px auto 0;
+  color: white;
+  text-align: center;
+  position: static;
+  z-index: 0;
+}
+
+footer h4 {
+  font-weight: 300;
+}
+
+footer h4 p {
+  display: inline-block;
+}
+
+/* FOOTER END */
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    padding: 30px 20px;
+    height: 70vh;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  header #header-title h1 {
+    font-size: 40px;
+  }
+  /* HEADER END */
+  /* MAIN */
+  #home article h3 {
+    padding: 5px 16px;
+    font-size: 32px;
+  }
+  .work:hover {
+    background-color: lightcoral;
+    transform: unset;
+  }
+  .work .work-container {
+    flex-direction: column;
+    max-height: unset;
+  }
+  .work .work-left {
+    width: 100%;
+    padding: 15px;
+  }
+  .work .work-right {
+    width: 100%;
+    position: relative;
+  }
+  .work .work-right .scroller,
+  .work .work-right li,
+  .work .work-right img {
+    max-height: 400px;
+  }
+  /* MAIN END */
+  /* FOOTER */
+  footer {
+    position: relative;
+    padding: 0 10vw;
+  }
+  footer h4 p {
+    display: block;
+  }
+  footer a {
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  /* FOOTER END */
+}
+
+/* MOBILE END */
+/* ABOUT */
+#about .wrapper {
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+
+#about .wrapper #leftside {
+  width: 50%;
+  max-width: 650px;
+  margin-right: 100px;
+  padding: 0 30px 30px 30px;
+}
+
+#about .wrapper #leftside #bio p {
+  margin: 20px 0;
+  color: white !important;
+}
+
+#about .wrapper #leftside #lectures {
+  margin-top: 100px;
+}
+
+#about .wrapper #leftside #lectures h3 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+#about .wrapper #leftside #lectures .year {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#about .wrapper #leftside #lectures li {
+  list-style: urdu;
+}
+
+#about .wrapper #rightside {
+  width: 50%;
+  padding: 0 30px 30px 30px;
+}
+
+#about .wrapper #rightside p:first-of-type {
+  margin: 0;
+}
+
+#about .wrapper #rightside a {
+  text-decoration: underline;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#about .wrapper #rightside a:hover {
+  font-style: italic;
+}
+
+#about .wrapper #rightside img {
+  width: 70%;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  #about .wrapper {
+    flex-direction: column;
+  }
+  #about .wrapper #leftside {
+    width: 100%;
+    max-width: unset;
+    padding: 16px;
+    margin: 0;
+  }
+  #about .wrapper #rightside {
+    width: 100%;
+    padding: 0 16px;
+  }
+  #about .wrapper #rightside img {
+    width: 100%;
+  }
+}
+
+/* ABOUT END */
+/* LOOSE ARCHIVES */
+#loose-archives section {
+  width: 100vw;
+  height: 5500px;
+  position: relative;
+  overflow: hidden;
+}
+
+#loose-archives section ul {
+  list-style: none;
+}
+
+#loose-archives section img {
+  position: absolute;
+  z-index: 0;
+}
+
+/* LOOSE ARCHIVES END */
