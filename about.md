@@ -16,6 +16,7 @@ lectures:
   year: 2016
   link: https://www.esad.pt/pt/news/esad-world-graphics-day-2016
 image: "/uploads/2019-11/info2.0.png"
+published: false
 
 ---
 <section id="leftside">
