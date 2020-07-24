@@ -6,8 +6,7 @@ description: Creative direction for a music and dance performance.
 cor_principal: rgb(203, 203, 203)
 cor_secundaria: rgb(0, 0, 0)
 images:
-- "/uploads/2020-07/sonic-voyaging-insta.png"
-- "/uploads/2020-07/sonic-voyaging-insta-2.png"
+- "/uploads/2020-07/sonic-digi-prog.png"
 links: []
 
 ---
