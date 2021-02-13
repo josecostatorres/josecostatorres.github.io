@@ -8,5 +8,6 @@ cor_secundaria: rgb(0, 0, 0)
 images:
 - "/uploads/2020-07/sonic-digi-prog.png"
 links: []
+published: false
 
 ---
