@@ -1,13 +1,12 @@
 ---
 ano: 2020
 title: VASO MURAL
-category: Identity
-description: Creative direction for a music and dance performance.
-cor_principal: rgb(203, 203, 203)
+category: mural
+description: ''
+cor_principal: rgb(255, 255, 255)
 cor_secundaria: rgb(0, 0, 0)
 images:
-- "/uploads/2020-07/sonic-digi-prog.png"
+- "/uploads/2021-02/mural-vaso-6.jpg"
 links: []
-published: false
 
 ---
