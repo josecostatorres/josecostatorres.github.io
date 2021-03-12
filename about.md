@@ -7,7 +7,7 @@ bio: Graphic designer and independent art director, born and based in Lisbon. Wi
   linked to his art, his work reflects all this and a desire for resistance.<br>i
   do poster design, Editorial design, Art Direction, Visual identity, Web &amp; interface,
   Signage, packaging and mural design.<br>EACH WORK IS CUSTOM MADE TO FIT ITS OWN
-  PURPOSE.<br><br>for work ENQUIRIES OR JUST A QUICK DRINK:<br>
+  PURPOSE.<br>
 lectures:
 - year: 2020
   title: Type Posters Top 30 Designers
