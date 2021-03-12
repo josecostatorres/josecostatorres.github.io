@@ -1,10 +1,13 @@
 ---
 layout: about
 title: About
-bio: Independent graphic and art direction bureau based in Lisboa-P.T. run by José
-  Torres. <br>Each work is custom made to fit its own purpose. <br>Focused on detailed
-  typographic work for comercial and cultural spheres. Including posters, publications,
-  sites, exhibitions and identities.<br>Would love to hear from you.<br>
+bio: Graphic designer and independent art director, born and based in Lisbon. With
+  a work specialized in typography and iconography, always linked to associations
+  and fascinated by the legacy of recreational centers. With the designer inextricably
+  linked to his art, his work reflects all this and a desire for resistance.<br>i
+  do poster design, Editorial design, Art Direction, Visual identity, Web &amp; interface,
+  Signage, packaging and mural design.<br>EACH WORK IS CUSTOM MADE TO FIT ITS OWN
+  PURPOSE.<br><br>for work ENQUIRIES OR JUST A QUICK DRINK:<br>
 lectures:
 - year: 2020
   title: Type Posters’ Top 30 Studios/Designers
