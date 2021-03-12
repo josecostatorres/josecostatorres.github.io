@@ -10,7 +10,7 @@ bio: Graphic designer and independent art director, born and based in Lisbon. Wi
   PURPOSE.<br><br>for work ENQUIRIES OR JUST A QUICK DRINK:<br>
 lectures:
 - year: 2020
-  title: Type Posters’ Top 30 Studios/Designers
+  title: Type Posters Top 30 Designers
   link: https://type-01.com/type-posters-top-30-studios-designers-projects-for-type-inspiration/
 - year: 2019
   title: THE DESIGN KIDS-INTERVIEW
