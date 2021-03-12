@@ -6,6 +6,9 @@ bio: Independent graphic and art direction bureau based in Lisboa-P.T. run by Jo
   typographic work for comercial and cultural spheres. Including posters, publications,
   sites, exhibitions and identities.<br>Would love to hear from you.<br>
 lectures:
+- year: 2020
+  title: Type Posters’ Top 30 Studios/Designers
+  link: https://type-01.com/type-posters-top-30-studios-designers-projects-for-type-inspiration/
 - year: 2019
   title: THE DESIGN KIDS-INTERVIEW
   link: https://thedesignkids.org/interviews/jose-torres
