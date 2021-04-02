@@ -2,7 +2,7 @@
 ano: 2019
 title: '"LACRAU"—PEDRO MAFAMA'
 category: Type
-description: Graphism for Pedro Mafama’s video, “Lacrau”, produced by António Caniços
+description: Graphism for Pedro Mafama’s video, “Lacrau”, produced by André Caniços
   .
 cor_principal: rgb(93, 197, 154)
 cor_secundaria: rgb(0, 0, 0)
